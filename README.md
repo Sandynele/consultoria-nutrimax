@@ -5,6 +5,10 @@ nutrição e suplementação. O projeto cobre todo o fluxo: exploração e trata
 dos dados, cálculo de custos de visitação e um **dashboard interativo** com mapa
 e gráficos.
 
+### 🔗 [▶ Ver o dashboard ao vivo](https://sandynele.github.io/consultoria-nutrimax/publicar/)
+
+Abre direto no navegador, sem instalar nada. *(Versão interativa que lê os dados em tempo real: [`dashboard/`](https://sandynele.github.io/consultoria-nutrimax/dashboard/).)*
+
 > ⚠️ Todos os dados são **fictícios**, criados apenas para fins de estudo.
 
 > 📄 **Conclusões, KPIs e recomendações:** veja **[ANALISE_E_CONCLUSOES.md](ANALISE_E_CONCLUSOES.md)**.
