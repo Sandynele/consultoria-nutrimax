@@ -87,7 +87,7 @@ Documento de leitura rápida com a **recomendação**, os **KPIs** e as resposta
 
 ---
 
-## 💡 Insights adicionais (além das perguntas)
+## 💡 Insights adicionais
 
 Análises extras que **reforçam** ou **refinam** a recomendação:
 
