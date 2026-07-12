@@ -7,7 +7,7 @@ e gráficos.
 
 > ⚠️ Todos os dados são **fictícios**, criados apenas para fins de estudo.
 
-> 📄 **Conclusões, KPIs e respostas às 7 perguntas do teste:** veja **[ANALISE_E_CONCLUSOES.md](ANALISE_E_CONCLUSOES.md)**.
+> 📄 **Conclusões, KPIs e recomendações:** veja **[ANALISE_E_CONCLUSOES.md](ANALISE_E_CONCLUSOES.md)**.
 
 ## Estrutura
 

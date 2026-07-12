@@ -1,6 +1,6 @@
 # Análise e Conclusões — Carteirização de Visitação NutriMax
 
-Documento de leitura rápida com a **recomendação**, os **KPIs** e as **respostas às 7 perguntas obrigatórias** do teste. O painel interativo está em [`dashboard/`](dashboard/) (ou na versão publicável [`publicar/index.html`](publicar/index.html)); o tratamento dos dados está em [`analise/tratamento_dados.py`](analise/tratamento_dados.py).
+Documento de leitura rápida com a **recomendação**, os **KPIs** e as respostas às principais **perguntas de negócio** da diretoria. O painel interativo está em [`dashboard/`](dashboard/) (ou na versão publicável [`publicar/index.html`](publicar/index.html)); o tratamento dos dados está em [`analise/tratamento_dados.py`](analise/tratamento_dados.py).
 
 > ⚠️ Dados 100% fictícios (estudo de caso). Distância medida em **linha reta** (Haversine) — aproximação de proximidade, não trajeto real de carro.
 
@@ -42,7 +42,7 @@ Documento de leitura rápida com a **recomendação**, os **KPIs** e as **respos
 
 ---
 
-## ❓ Respostas às 7 perguntas obrigatórias
+## ❓ Perguntas de negócio respondidas
 
 ### 1. Quantos clientes existem? Quantos têm CEP? Isso muda a análise de cobertura?
 - **454 registros**, mas apenas **448 IDs únicos** — há **6 IDs duplicados** (12 linhas). Foram **auditados, não removidos**: consolidar é decisão de negócio.
