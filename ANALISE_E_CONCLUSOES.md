@@ -64,7 +64,7 @@ Documento de leitura rápida com a **recomendação**, os **KPIs** e as resposta
 
 ### 5. Há clientes de alto valor, nunca visitados, fora do raio? O que fazer?
 - **Sim: 19 clientes de alto valor fora do raio** (grupo "Exceção estratégica"), dos quais **16 nunca foram visitados** — dinheiro na mesa.
-- **Recomendação:** atendê-los por **visita pontual/avulsa**, sem expandir o raio nem criar rota fixa por causa deles. Reavaliar se o grupo crescer (ver pergunta 6).
+- **Recomendação:** atendê-los por **visita pontual/avulsa**, sem expandir o raio nem criar rota fixa por causa deles. Reavaliar se o grupo crescer (ver a análise de custo a seguir).
 
 ### 6. A proposta (1 rep, 25 km, Vila Mariana) é a melhor? Pontual × 2º ponto (com número)
 - **Base e raio: manter.** **Equipe: ajustar.** 1 representante faz ~55 visitas/mês:
@@ -105,7 +105,7 @@ Além dos números fixos, o painel **simula cenários** — frequência de visit
 
 ---
 
-## 🧹 Qualidade dos dados (a base tem imperfeições de propósito)
+## 🧹 Qualidade dos dados
 
 Tratamento aplicado em [`analise/tratamento_dados.py`](analise/tratamento_dados.py), **preservando a base original**:
 
