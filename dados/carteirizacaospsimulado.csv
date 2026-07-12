@@ -1,0 +1,455 @@
+﻿id_cliente;nome_fantasia;tipo_profissional;bairro;zona;cep;latitude;longitude;canal_venda;data_cadastro;data_ultima_compra;qtd_pedidos_12m;faturamento_12m;ja_visitado;obs_visita
+CLI-0001;Essência Clínica Médica;Consultório Médico;Moema;Sul;01193-263;-23.593033;-46.680252;Distribuidor;2023-09-27;;0;0;Não;
+CLI-0002;Ápice Espaço Estético;Clínica Estética;Tatuapé;Leste;08246-184;-23.546390;-46.570789;Marketplace;2025-08-16;;0;0;Não;
+CLI-0003;Nutrivida Clínica Médica;Consultório Médico;Campo Belo;Sul;05746-543;-23.612327;-46.686183;Loja Física;2025-05-20;2025-06-23;26;6985;Sim;Retorno positivo
+CLI-0004;Alma Estética;Clínica Estética;Liberdade;Centro;03976-969;-23.553314;-46.643715;Distribuidor;2023-10-25;2024-08-01;2;15944;Sim;Sem retorno
+CLI-0005;Equilíbrio Farmácia de Manipulação;Farmácia;Itaquaquecetuba;Leste (fora RMSP central);05279-193;-23.480864;-46.361202;loja fisica;2024-10-07;2025-10-03;6;1560;Não;
+CLI-0006;Novo Ciclo Treinamento Funcional;Academia / Personal Trainer;Cotia;Oeste (fora RMSP central);04983-410;-23.591661;-46.902479;Marketplace;2024-12-30;;0;0;Não;
+CLI-0007;Renove Treinamento Funcional;Academia / Personal Trainer;Guarulhos;Norte (fora RMSP central);03967-898;-23.456400;-46.548854;Distribuidor;2024-04-21;2025-09-09;22;32974;Não;
+CLI-0008;Saúde Plena Farmácia de Manipulação;Farmácia;Sé;Centro;01612-661;-23.542114;-46.629964;Indicação;2024-11-26;2025-11-27;8;25984;Sim;
+CLI-0009;Ápice Farmácia;Farmácia;Itaquera;Leste;05305-567;-23.542951;-46.463442;Indicação;2026-03-12;2025-03-18;5;9362;Sim;Retorno positivo
+CLI-0010;Origem Treinamento Funcional;Academia / Personal Trainer;Campo Belo;Sul;05520-880;-23.602576;-46.677274;Distribuidor;2025-07-19;2024-08-19;3;34543;Não;
+CLI-0011;Saúde Plena Clínica Nutricional;Nutricionista;Cotia;Oeste (fora RMSP central);01322-044;-23.586699;-46.902732;Marketplace;2026-02-15;;0;0;Não;
+CLI-0012;Vitalis Drogaria;Farmácia;Tatuapé;Leste;03474-599;-23.532112;-46.579671;Marketplace;2025-05-28;2024-09-26;17;51178;Sim;Retorno positivo
+CLI-0013;Vitalis Atacado de Suplementos;Distribuidor de Suplementos;Tatuapé;Leste;03656-757;-23.549472;-46.579893;Loja Física;2026-06-17;2025-07-27;3;47285;Sim;Aumentou pedido
+CLI-0014;Saúde Plena Clínica de Estética;Clínica Estética;Liberdade;Centro;;-23.572459;-46.640827;Loja Física;2025-10-27;2026-04-24;19;40670;Sim;
+CLI-0015;Bioforma Nutrição;Nutricionista;Vila Ré;Leste;08014-704;-23.539990;-46.486511;Marketplace;2024-09-17;2025-05-28;4;293;Sim;Sem retorno
+CLI-0016;Alma Farmácia;Farmácia;Tucuruvi;Norte;06242-962;-23.480945;-46.595594;Distribuidor;2024-03-09;;0;0;Não;
+CLI-0017;Essência Academia;Academia / Personal Trainer;Pinheiros;Oeste;01988-017;-23.576005;-46.684875;Indicação;2025-05-20;;0;0;Não;
+CLI-0018;Equilíbrio Estética;Clínica Estética;São Bernardo do Campo;Sul (ABC);04677-689;-23.689648;-46.547553;Distribuidor;2025-01-03;2026-04-13;1;-850;Não;
+CLI-0019;Prisma Academia;Academia / Personal Trainer;Bela Vista;Centro;04585-109;-23.573323;-46.645783;Distribuidor;2024-11-23;2025-08-28;3;3622;Sim;Aumentou pedido
+CLI-0020;Renove House Nutrition;Loja de Suplementos;Perus;Norte (fora RMSP central);02297-526;-23.397913;-46.741225;Marketplace;2023-10-26;2024-08-03;8;34287;Não;
+CLI-0021;Bioforma Consultório Médico;Consultório Médico;Osasco;Oeste (fora RMSP central);04018-307;-23.535451;-46.801547;Loja Física;2025-05-21;2024-08-13;10;7170;Não;
+CLI-0022;BemStar Atacado de Suplementos;Distribuidor de Suplementos;Tatuapé;Leste;;-23.540915;-46.576806;Indicação;2024-07-05;2026-01-08;24;1210;Sim;Retorno positivo
+CLI-0023;Essência Farmácia;Farmácia;Vila Ré;Leste;05163-824;-23.529250;-46.485570;Marketplace;2023-08-03;2025-10-20;21;18269;Não;
+CLI-0024;Raiz Suplementos;Loja de Suplementos;Guarulhos;Norte (fora RMSP central);;-23.469313;-46.528944;Loja Física;2025-01-19;2026-01-23;18;16202;Sim;Retorno positivo
+CLI-0025;Bioforma Clínica Nutricional;Nutricionista;Itaquera;Leste;08559-861;-23.543874;-46.433505;Distribuidor;2025-11-04;;0;0;Não;
+CLI-0026;Equilíbrio Treinamento Funcional;Academia / Personal Trainer;Liberdade;Centro;04684-927;-23.545533;-46.642215;Loja Física;2023-07-21;2026-04-08;20;26052;Não;
+CLI-0027;Renove Clínica Médica;Consultório Médico;Santana;Norte;07550-197;-23.499792;-46.641086;Distribuidor;2024-07-18;2025-09-23;7;5291;Sim;
+CLI-0028;Viva Studio Fitness;Academia / Personal Trainer;Vila Mariana;Sul;08458-086;-23.601971;-46.633989;Marketplace;2024-03-14;2024-11-12;14;128;Não;
+CLI-0029;Ápice Atacado de Suplementos;Distribuidor de Suplementos;Vila Mariana;Sul;03446-460;-23.602667;-46.621815;Distribuidor;2024-07-23;2026-07-06;12;59645;Sim;Retorno positivo
+CLI-0030;Prisma Suplementos;Loja de Suplementos;Pinheiros;Oeste;06368-392;-23.577574;-46.706827;Loja Física;2023-10-19;;0;0;Não;
+CLI-0031;Harmonia Clínica Nutricional;Nutricionista;Osasco;Oeste (fora RMSP central);08658-321;-23.524426;-46.774521;Loja Física;2024-02-16;2024-11-17;27;21433;Não;
+CLI-0009;BemStar Nutrição;Nutricionista;Lapa;Oeste;05443-666;-23.538385;-46.709683;Loja Física;2025-07-17;;0;0;Não;
+CLI-0033;Movimento Studio Fitness;Academia / Personal Trainer;São Bernardo do Campo;Sul (ABC);06592-445;-23.684431;-46.568173;Distribuidor;2023-10-29;2024-12-25;3;21634;Não;
+CLI-0034;Pura Distribuidora;Distribuidor de Suplementos;São Miguel Paulista;Leste;;-23.494697;-46.432815;Marketplace;2024-12-29;;0;0;Não;
+CLI-0035;Prisma Nutrição;Nutricionista;Vila Ré;Leste;02718-738;-23.526459;-46.490833;Distribuidor;2024-11-12;;0;0;Não;
+CLI-0036;BemStar House Nutrition;Loja de Suplementos;Santo Amaro;Sul;08632-045;-23.647970;-46.694527;distribuidor;2024-10-16;2024-10-23;16;40316;Sim;Aumentou pedido
+CLI-0037;Origem Treinamento Funcional;Academia / Personal Trainer;Osasco;Oeste (fora RMSP central);06172-224;-23.517331;-46.808038;Marketplace;2025-03-05;;0;0;Não;
+CLI-0038;Movimento Nutrição;Nutricionista;vila mariana  ;Sul;01372-819;-23.583812;-46.636861;Distribuidor;2024-11-18;;0;0;Não;
+CLI-0039;Raiz Academia;Academia / Personal Trainer;São Miguel Paulista;Leste;;-23.508839;-46.437586;Loja Física;2024-08-28;2026-02-07;13;29846;Não;
+CLI-0040;Alma Clínica de Estética;Clínica Estética;Tatuapé;Leste;06406-200;-23.557928;-46.592925;Marketplace;2026-01-01;2024-09-12;22;59897;Sim;Retorno positivo
+CLI-0041;Vitalis Estética;Clínica Estética;Osasco;Oeste (fora RMSP central);;-23.516871;-46.801081;Distribuidor;2026-03-24;;0;0;Não;
+CLI-0042;Prisma Nutrição;Nutricionista;Perus;Norte (fora RMSP central);02130-854;-23.398254;-46.753605;Indicação;2024-05-07;2024-11-21;30;107;Não;
+CLI-0043;Vitalis House Nutrition;Loja de Suplementos;Itaquera;Leste;05963-432;-23.521202;-46.460921;Loja Física;2024-06-02;2025-07-29;2;9514;Não;
+CLI-0044;Origem Farmácia;Farmácia;Santo André;Sul (ABC);06752-663;-23.663652;-46.531433;Marketplace;2024-08-20;2025-05-25;7;7108;Não;
+CLI-0045;Foco Farmácia de Manipulação;Farmácia;moema  ;Sul;06949-300;-23.598685;-46.648352;Loja Física;2024-11-16;2025-06-09;25;35916;Sim;Aumentou pedido
+CLI-0046;Prisma Consultório Médico;Consultório Médico;Jabaquara;Sul;07848-843;-23.633120;-46.659179;Indicação;2025-08-12;2026-04-08;8;746;Sim;Retorno positivo
+CLI-0047;Alma Clínica Nutricional;Nutricionista;ipiranga  ;Sul;05735-585;-23.589740;-46.623952;Indicação;2025-07-20;2025-09-21;30;85235;Sim;Aumentou pedido
+CLI-0048;Pura Clínica de Estética;Clínica Estética;Guarulhos;Norte (fora RMSP central);05761-128;-23.456363;-46.531050;Distribuidor;2026-04-07;2024-09-26;2;635;Não;
+CLI-0049;Alma Espaço Estético;Clínica Estética;Guaianases;Leste;01543-972;-23.563072;-46.398121;Marketplace;2025-09-30;;0;0;Não;
+CLI-0050;Viva Distribuidora;Distribuidor de Suplementos;Itaquaquecetuba;Leste (fora RMSP central);05878-104;-23.493801;-46.354535;Distribuidor;2025-07-01;2025-11-13;1;8917;Não;
+CLI-0051;Foco House Nutrition;Loja de Suplementos;Sé;Centro;04841-638;-23.532877;-46.633871;Distribuidor;2024-07-25;2025-06-29;19;47420;Sim;Sem retorno
+CLI-0052;Pura Academia;Academia / Personal Trainer;Itaquaquecetuba;Leste (fora RMSP central);02995-806;-23.481812;-46.357116;Indicação;2024-03-27;;0;0;Não;
+CLI-0053;Bioforma Farmácia de Manipulação;Farmácia;Lapa;Oeste;01192-917;-23.545106;-46.716264;Marketplace;2025-11-17;2024-07-26;28;7554;Sim;Aumentou pedido
+CLI-0054;Vitalis Clínica de Estética;Clínica Estética;Tatuapé;Leste;05445-459;-23.522819;-46.591003;Loja Física;2025-10-01;2024-09-26;14;1530;Não;
+CLI-0055;Cuidar Sports Nutrition;Loja de Suplementos;diadema  ;Sul (ABC);05606-854;-23.679704;-46.635124;Indicação;2026-02-19;;0;0;Não;
+CLI-0056;Pura House Nutrition;Loja de Suplementos;Vila Ré;Leste;05709-476;-23.541199;-46.497394;Marketplace;2024-05-30;;0;0;Não;
+CLI-0057;Foco Treinamento Funcional;Academia / Personal Trainer;Diadema;Sul (ABC);02974-081;-23.670170;-46.618227;Indicação;2024-04-12;2024-12-05;26;400;Não;
+CLI-0058;Saúde Plena House Nutrition;Loja de Suplementos;Bela Vista;Centro;02924-940;-23.545273;-46.669145;Indicação;2026-06-10;;0;0;Não;
+CLI-0059;Cuidar Distribuidora;Distribuidor de Suplementos;Lapa;Oeste;04743-876;-23.517663;-46.719068;Loja Física;2023-10-29;;0;0;Não;
+CLI-0060;Ápice Consultório de Nutrição;Nutricionista;Jabaquara;Sul;03992-300;-23.663094;-46.653952;Distribuidor;2023-09-15;2024-11-15;17;281;Sim;Aumentou pedido
+CLI-0061;Equilíbrio Estética;Clínica Estética;Moema;Sul;08847-253;-23.605843;-46.666559;Distribuidor;2024-07-03;2025-08-15;15;20917;Não;
+CLI-0062;Bioforma Academia;Academia / Personal Trainer;Moema;Sul;03565-891;-23.604487;-46.674122;Distribuidor;2025-10-07;2025-11-05;18;21453;Não;
+CLI-0063;Cuidar Distribuidora;Distribuidor de Suplementos;Guarulhos;Norte (fora RMSP central);05367-768;-23.447859;-46.549126;Marketplace;2025-05-19;2025-05-09;6;4881;Sim;
+CLI-0064;Vitalis Consultório de Nutrição;Nutricionista;Tatuapé;Leste;01092-445;-23.540834;-46.581112;Loja Física;2026-02-09;2025-02-13;20;28325;Não;
+CLI-0065;Raiz House Nutrition;Loja de Suplementos;Carapicuíba;Oeste (fora RMSP central);08438-703;-23.520681;-46.853711;Loja Física;2025-06-02;2024-12-05;29;750;Sim;Aumentou pedido
+CLI-0066;Equilíbrio Espaço Estético;Clínica Estética;Santo Amaro;Sul;;-23.654430;-46.698104;Distribuidor;2025-03-24;2024-12-03;4;1134;Não;
+CLI-0067;Ápice Nutrição;Nutricionista;Santana;Norte;01620-414;-23.519152;-46.623787;Marketplace ;2026-04-24;2024-10-07;29;22603;Não;
+CLI-0068;Ápice Consultório Médico;Consultório Médico;Perus;Norte (fora RMSP central);06607-055;-23.405799;-46.746129;Indicação;2025-10-14;;0;0;Não;
+CLI-0069;Pura Treinamento Funcional;Academia / Personal Trainer;Santo André;Sul (ABC);04705-106;-23.653946;-46.538865;Distribuidor;2025-04-26;2025-08-24;1;364;Não;
+CLI-0070;Harmonia Sports Nutrition;Loja de Suplementos;Mogi das Cruzes;Leste (fora RMSP central);07944-867;-23.513418;-46.175936;Loja Física;2025-04-30;2026-03-22;3;64;Não;
+CLI-0071;Nutrivida Clínica Nutricional;Nutricionista;Lapa;Oeste;08151-819;-23.538284;-46.686970;Loja Física;2024-08-16;;0;0;Não;
+CLI-0072;Movimento House Nutrition;Loja de Suplementos;Tatuapé;Leste;01989-468;-23.527489;-46.569538;Loja Física;2023-11-27;;0;0;Não;
+CLI-0073;Alma Academia;Academia / Personal Trainer;Campo Belo;Sul;04483-948;-23.637333;-46.656842;Indicação;2023-08-25;2025-04-02;27;5668;Sim;Retorno positivo
+CLI-0074;Novo Ciclo Suplementos;Loja de Suplementos;Vila Mariana;Sul;05167-179;-23.578011;-46.653274;Distribuidor;2024-04-09;2025-07-18;2;30934;Não;
+CLI-0075;Cuidar Nutrição;Nutricionista;moema  ;Sul;08068-877;-23.612789;-46.649632;Distribuidor;2025-08-13;2025-01-27;25;6220;Não;
+CLI-0076;Viva Studio Fitness;Academia / Personal Trainer;São Miguel Paulista;Leste;03262-578;-23.509415;-46.431200;Indicação;2025-08-06;2024-10-21;30;8918;Sim;
+CLI-0070;Viva Studio Fitness;Academia / Personal Trainer;Liberdade;Centro;05446-612;-23.546871;-46.652957;Distribuidor;2024-06-12;2024-12-18;3;722;Não;
+CLI-0041;Raiz Clínica de Estética;Clínica Estética;Tucuruvi;Norte;08583-545;-23.467419;-46.590906;Indicação;2025-08-15;2026-04-23;26;30312;Não;
+CLI-0079;Origem Farmácia;Farmácia;Tatuapé;Leste;07938-221;-23.554592;-46.564558;Distribuidor;2024-09-11;2024-09-06;11;13747;Não;
+CLI-0080;BemStar Atacado de Suplementos;Distribuidor de Suplementos;Santo André;Sul (ABC);03425-357;-23.679522;-46.543035;Loja Física;2023-08-26;2026-03-01;29;1018;Não;
+CLI-0081;Harmonia Sports Nutrition;Loja de Suplementos;são bernardo do campo  ;Sul (ABC);02869-686;-23.705868;-46.548648;Loja Física;2023-08-06;2025-11-08;24;341;Sim;Aumentou pedido
+CLI-0082;Prisma Espaço Estético;Clínica Estética;Pinheiros;Oeste;04911-034;-23.566160;-46.705296;Marketplace;2025-07-02;2025-06-02;9;1024;Sim;
+CLI-0083;Cuidar Suplementos;Loja de Suplementos;Moema;Sul;02064-207;-23.604836;-46.676652;Marketplace;2025-02-19;2026-03-02;16;66784;Sim;Retorno positivo
+CLI-0084;Vitalis Distribuidora;Distribuidor de Suplementos;Moema;Sul;04758-822;-23.589472;-46.648147;Indicação;2026-02-20;2025-04-16;15;41820;Sim;Aumentou pedido
+CLI-0085;Harmonia Atacado de Suplementos;Distribuidor de Suplementos;Ipiranga;Sul;04082-824;-23.582753;-46.591930;Distribuidor;2026-03-13;;0;0;Não;
+CLI-0086;Renove Estética;Clínica Estética;Tatuapé;Leste;03295-637;-23.539129;-46.588704;Loja Física;2024-11-19;2024-08-31;19;7883;Sim;
+CLI-0087;Cuidar Suplementos;Loja de Suplementos;Perus;Norte (fora RMSP central);01623-564;-23.378564;-46.757445;Indicação;2025-02-28;2024-07-17;27;23953;Não;
+CLI-0088;Bioforma Consultório de Nutrição;Nutricionista;Jabaquara;Sul;02544-709;-23.635263;-46.631750;Loja Física;2024-01-05;2024-12-24;23;3523;Não;
+CLI-0089;Saúde Plena Espaço Estético;Clínica Estética;Santo André;Sul (ABC);06395-871;-23.679793;-46.550724;Indicação;2024-05-25;2026-04-05;18;8015;Não;
+CLI-0090;Nutrivida Drogaria;Farmácia;Liberdade;Centro;06753-106;-23.557515;-46.636517;Marketplace;2025-12-28;2026-05-12;14;3396;Não;
+CLI-0091;Origem Studio Fitness;Academia / Personal Trainer;Jabaquara;Sul;08631-045;-23.645549;-46.649017;Loja Física;2026-03-07;2024-10-04;2;10044;Sim;Retorno positivo
+CLI-0092;Equilíbrio Consultório de Nutrição;Nutricionista;jabaquara  ;Sul;02579-987;-23.631977;-46.633872;Loja Física;2026-02-20;2024-10-13;29;108770;Sim;Aumentou pedido
+CLI-0093;Origem Suplementos;Loja de Suplementos;Ipiranga;Sul;06793-610;-23.599828;-46.601183;Loja Física;2024-07-02;2025-10-25;10;2515;Sim;Aumentou pedido
+CLI-0094;Essência Distribuidora;Distribuidor de Suplementos;Guaianases;Leste;08193-995;-23.556588;-46.416709;Marketplace;2023-10-16;2025-12-26;28;4391;Não;
+CLI-0095;Nutrivida Sports Nutrition;Loja de Suplementos;Santo André;Sul (ABC);01114-634;-23.648864;-46.541965;Distribuidor;2026-04-02;2026-04-21;4;34006;Não;
+CLI-0096;Renove Clínica Médica;Consultório Médico;Osasco;Oeste (fora RMSP central);;-23.541775;-46.804134;Marketplace;2024-11-26;2026-06-01;1;13094;Não;
+CLI-0097;Harmonia Nutrição;Nutricionista;São Bernardo do Campo;Sul (ABC);06123-548;-23.683110;-46.563435;Loja Física;2023-11-09;2024-12-25;18;28612;Sim;
+CLI-0098;Essência Drogaria;Farmácia;São Miguel Paulista;Leste;06182-742;-23.505804;-46.458197;Indicacao;2025-02-05;2025-12-19;28;3579;Não;
+CLI-0099;Origem Clínica Médica;Consultório Médico;Moema;Sul;06980-746;-23.607952;-46.671464;Indicação;2025-12-05;2026-05-17;27;77857;Sim;Retorno positivo
+CLI-0100;Bioforma Atacado de Suplementos;Distribuidor de Suplementos;São Miguel Paulista;Leste;02956-333;-23.490963;-46.430178;Distribuidor;2024-02-20;2025-02-21;22;45454;Não;
+CLI-0101;Alma Distribuidora;Distribuidor de Suplementos;Santo Amaro;Sul;01367-981;-23.640240;-46.708840;Distribuidor;2026-01-09;2025-09-14;23;20374;Não;
+CLI-0102;Nutrivida House Nutrition;Loja de Suplementos;Moema;Sul;03032-104;-23.598119;-46.672742;Distribuidor;2026-05-29;2026-06-12;8;1957;Não;
+CLI-0103;Bioforma Drogaria;Farmácia;Mogi das Cruzes;Leste (fora RMSP central);04792-146;-23.511862;-46.196338;Distribuidor;2024-12-16;2025-10-25;11;13508;Não;
+CLI-0104;Essência Espaço Estético;Clínica Estética;Guaianases;Leste;06773-436;-23.554674;-46.414730;Loja Física;2023-11-26;2025-07-24;19;126;Não;
+CLI-0105;Origem Farmácia;Farmácia;campo belo  ;Sul;05281-008;-23.637618;-46.660016;Indicação;2024-05-31;2025-04-17;17;13996;Não;
+CLI-0106;Movimento Farmácia;Farmácia;São Bernardo do Campo;Sul (ABC);07399-049;-23.678194;-46.553772;Indicação;2026-03-30;;0;0;Não;
+CLI-0107;Nutrivida Consultório Médico;Consultório Médico;Ipiranga;Sul;05094-263;-23.605596;-46.626960;Indicação;2025-10-27;2026-06-10;7;21408;Sim;Aumentou pedido
+CLI-0108;Bioforma Academia;Academia / Personal Trainer;Campo Belo;Sul;05792-798;-23.628556;-46.683619;Loja Física;2025-04-05;2025-03-25;12;42611;Não;
+CLI-0109;Bioforma Atacado de Suplementos;Distribuidor de Suplementos;Cotia;Oeste (fora RMSP central);06740-100;-23.620949;-46.926766;Distribuidor;2025-07-20;;0;0;Não;
+CLI-0110;Origem Clínica de Estética;Clínica Estética;Vila Ré;Leste;07211-157;-23.514777;-46.504067;Marketplace;2025-03-04;2025-08-18;12;106;Não;
+CLI-0111;Foco Nutrição;Nutricionista;Jabaquara;Sul;05068-779;-23.663613;-46.653835;Distribuidor;2025-07-28;2024-09-23;21;5018;Sim;Retorno positivo
+CLI-0112;Foco Distribuidora;Distribuidor de Suplementos;pinheiros  ;Oeste;03867-298;-23.552024;-46.710618;Indicação;2025-11-29;2025-11-30;5;172;Sim;
+CLI-0113;Viva Academia;Academia / Personal Trainer;São Bernardo do Campo;Sul (ABC);06779-869;-23.709385;-46.566207;Indicação;2023-09-13;2026-01-04;13;101;Sim;Aumentou pedido
+CLI-0114;Alma Atacado de Suplementos;Distribuidor de Suplementos;Tucuruvi;Norte;07260-431;-23.489310;-46.594924;Indicação;2026-05-09;;0;0;Não;
+CLI-0115;Raiz House Nutrition;Loja de Suplementos;Perus;Norte (fora RMSP central);06307-694;-23.377918;-46.726421;Distribuidor;2025-02-23;2024-12-15;24;82924;Não;
+CLI-0116;Essência Suplementos;Loja de Suplementos;Santo Amaro;Sul;;-23.644325;-46.703239;Marketplace;2024-07-10;2024-11-08;6;17331;Sim;Retorno positivo
+CLI-0117;Foco Sports Nutrition;Loja de Suplementos;Campo Belo;Sul;04747-436;-23.603515;-46.657136;Indicação;2025-10-31;2025-05-04;3;31271;Sim;Sem retorno
+CLI-0118;Essência Suplementos;Loja de Suplementos;Carapicuíba;Oeste (fora RMSP central);02527-878;-23.527452;-46.853164;Loja Física;2024-12-15;2025-11-16;14;55919;Não;
+CLI-0119;Bioforma Suplementos;Loja de Suplementos;Tatuapé;Leste;06426-558;-23.531332;-46.566554;Distribuidor;2026-06-23;;0;0;Não;
+CLI-0120;Raiz Sports Nutrition;Loja de Suplementos;Santana;Norte;;-23.499752;-46.641678;Loja Física;2025-05-01;2025-03-19;4;149;Sim;Sem retorno
+CLI-0121;BemStar Atacado de Suplementos;Distribuidor de Suplementos;Vila Mariana;Sul;;-23.584038;-46.638318;Marketplace;2025-11-20;2025-05-15;3;32882;Sim;
+CLI-0122;Alma Farmácia de Manipulação;Farmácia;Jabaquara;Sul;05348-774;-23.629134;-46.645973;Distribuidor;2026-02-05;2025-11-18;7;9631;Não;
+CLI-0123;Cuidar Distribuidora;Distribuidor de Suplementos;Perus;Norte (fora RMSP central);04115-199;-23.401833;-46.729215;Indicação;2025-07-04;;0;0;Não;
+CLI-0072;Pura Sports Nutrition;Loja de Suplementos;Mogi das Cruzes;Leste (fora RMSP central);;-23.540750;-46.181408;Marketplace;2024-11-09;2024-10-31;13;657;Não;
+CLI-0125;Viva Consultório de Nutrição;Nutricionista;Itaquaquecetuba;Leste (fora RMSP central);;-23.477735;-46.352605;Loja Física;2024-11-22;2024-07-16;16;13167;Não;
+CLI-0126;Ápice Clínica Médica;Consultório Médico;Mogi das Cruzes;Leste (fora RMSP central);03246-372;-23.523895;-46.201378;Indicação;2025-04-30;2024-08-18;8;8204;Não;
+CLI-0127;Nutrivida Consultório Médico;Consultório Médico;Carapicuíba;Oeste (fora RMSP central);05427-094;-23.514726;-46.835164;Loja Física;2024-05-11;2026-05-06;24;484;Não;
+CLI-0128;Bioforma Drogaria;Farmácia;Moema;Sul;02159-251;-23.603780;-46.653164;Distribuidor;2024-10-05;;0;0;Não;
+CLI-0129;Vitalis Estética;Clínica Estética;Vila Mariana;Sul;07308-427;-23.597071;-46.641028;Marketplace ;2025-06-21;2024-09-29;18;901;Sim;
+CLI-0130;Harmonia Studio Fitness;Academia / Personal Trainer;Guarulhos;Norte (fora RMSP central);01005-809;-23.450343;-46.518472;Distribuidor;2024-01-20;2024-11-08;29;1363;Não;
+CLI-0131;Foco Suplementos;Loja de Suplementos;Itaquera;Leste;03060-514;-23.531467;-46.452342;Indicação;2026-01-04;2026-03-08;15;4876;Não;
+CLI-0132;Cuidar Espaço Estético;Clínica Estética;Osasco;Oeste (fora RMSP central);01615-700;-23.521466;-46.800830;Loja Física;2023-08-28;;0;0;Não;
+CLI-0133;Cuidar Sports Nutrition;Loja de Suplementos;Liberdade;Centro;08900-681;-23.573183;-46.633114;Marketplace;2024-04-06;2025-09-09;30;72140;Sim;Aumentou pedido
+CLI-0134;Equilíbrio Sports Nutrition;Loja de Suplementos;Guarulhos;Norte (fora RMSP central);02195-971;-23.470046;-46.525907;Indicação;2026-03-16;2025-08-23;2;16314;Não;
+CLI-0135;BemStar Drogaria;Farmácia;Itaquaquecetuba;Leste (fora RMSP central);06808-699;-23.500900;-46.355719;Indicação;2025-12-06;2026-01-30;21;57268;Não;
+CLI-0136;Foco Clínica Médica;Consultório Médico;Mogi das Cruzes;Leste (fora RMSP central);04016-098;-23.522452;-46.191989;Loja Física;2025-05-29;2025-06-04;16;3980;Não;
+CLI-0137;Cuidar Sports Nutrition;Loja de Suplementos;Jabaquara;Sul;04925-555;-23.642532;-46.639299;Loja Física;2023-07-07;2025-10-09;11;6847;Não;
+CLI-0138;Essência Suplementos;Loja de Suplementos;Campo Belo;Sul;03703-170;-23.614899;-46.673594;Indicação;2024-06-19;2025-12-30;6;26256;Sim;Aumentou pedido
+CLI-0139;Movimento Espaço Estético;Clínica Estética;Itaquaquecetuba;Leste (fora RMSP central);05698-795;-23.474726;-46.344522;Marketplace;2024-05-04;2026-01-12;8;23885;Sim;Retorno positivo
+CLI-0140;BemStar Suplementos;Loja de Suplementos;Ipiranga;Sul;06134-350;-23.579588;-46.615258;Distribuidor;2025-09-15;;0;0;Não;
+CLI-0141;Saúde Plena Distribuidora;Distribuidor de Suplementos;Santana;Norte;02673-359;-23.504699;-46.644211;Indicação;2024-11-26;;0;0;Não;
+CLI-0142;Viva Estética;Clínica Estética;Bela Vista;Centro;06345-146;-23.579726;-46.662829;Loja Física;2024-02-01;2024-11-11;7;681;Não;
+CLI-0143;BemStar Suplementos;Loja de Suplementos;Diadema;Sul (ABC);01964-805;-23.680701;-46.614177;Distribuidor;2023-09-21;2024-12-21;9;528;Não;
+CLI-0144;Prisma Nutrição;Nutricionista;Perus;Norte (fora RMSP central);08104-599;-23.409946;-46.731178;Marketplace;2026-04-19;2025-07-18;30;74214;Sim;
+CLI-0145;Raiz Academia;Academia / Personal Trainer;Lapa;Oeste;03447-587;-23.529638;-46.717061;Loja Física;2024-06-11;2025-12-30;25;26767;Não;
+CLI-0146;Cuidar Nutrição;Nutricionista;Guaianases;Leste;07626-787;-23.549316;-46.409399;Distribuidor;2024-04-24;2025-10-09;2;9905;Não;
+CLI-0147;Ápice Academia;Academia / Personal Trainer;Guaianases;Leste;06444-405;-23.530999;-46.423820;Distribuidor;2023-08-23;2025-10-17;28;23656;Não;
+CLI-0148;BemStar Studio Fitness;Academia / Personal Trainer;Jabaquara;Sul;07582-264;-23.647126;-46.649645;Indicação;2024-11-24;;0;0;Não;
+CLI-0149;Novo Ciclo Farmácia de Manipulação;Farmácia;Tatuapé;Leste;08374-183;-23.540309;-46.594671;Distribuidor;2026-04-25;;0;0;Não;
+CLI-0150;Foco Academia;Academia / Personal Trainer;Santo Amaro;Sul;;-23.662947;-46.714485;Marketplace;2024-06-09;2025-10-25;1;4415;Sim;Sem retorno
+CLI-0151;Equilíbrio Academia;Academia / Personal Trainer;Ipiranga;Sul;03197-178;-23.592430;-46.610220;Marketplace;2024-07-08;2024-10-07;10;17110;Não;
+CLI-0152;Harmonia Estética;Clínica Estética;Bela Vista;Centro;05624-967;-23.549004;-46.645278;Indicação;2024-03-16;2025-02-04;22;32933;Não;
+CLI-0153;Bioforma Clínica de Estética;Clínica Estética;Santana;Norte;03042-272;-23.517152;-46.622719;Marketplace;2025-01-26;2025-03-06;14;14977;Sim;Aumentou pedido
+CLI-0154;Foco Farmácia de Manipulação;Farmácia;Carapicuíba;Oeste (fora RMSP central);06328-716;-23.530295;-46.844619;Marketplace;2024-06-04;2025-02-02;27;75205;Não;
+CLI-0155;Foco Clínica Médica;Consultório Médico;Jabaquara;Sul;06546-055;-23.647215;-46.653432;Distribuidor;2024-03-02;2026-01-29;23;10651;Não;
+CLI-0156;Cuidar House Nutrition;Loja de Suplementos;Vila Ré;Leste;07010-553;-23.520808;-46.490974;Indicação;2026-01-03;2026-06-25;18;216;Não;
+CLI-0157;Cuidar Drogaria;Farmácia;Osasco;Oeste (fora RMSP central);06447-112;-23.549996;-46.785380;Marketplace;2025-08-04;2025-02-01;27;30150;Sim;Retorno positivo
+CLI-0158;Harmonia Consultório de Nutrição;Nutricionista;Carapicuíba;Oeste (fora RMSP central);05728-333;-23.513606;-46.828885;Loja Física;2023-08-29;2025-03-29;17;35079;Sim;
+CLI-0159;Cuidar Clínica Médica;Consultório Médico;São Miguel Paulista;Leste;07936-403;-23.513477;-46.427909;Distribuidor;2024-04-16;2025-09-06;22;17314;Não;
+CLI-0160;Saúde Plena Distribuidora;Distribuidor de Suplementos;Mogi das Cruzes;Leste (fora RMSP central);08624-830;-23.540085;-46.175436;Indicacao;2024-07-14;2025-08-14;9;85;Não;
+CLI-0161;BemStar Nutrição;Nutricionista;Moema;Sul;;-23.596559;-46.654868;Loja Física;2026-01-05;;0;0;Não;
+CLI-0162;Movimento Drogaria;Farmácia;Bela Vista;Centro;07575-724;-23.568991;-46.665677;Distribuidor;2023-07-09;2025-05-27;25;66068;Não;
+CLI-0163;Bioforma Nutrição;Nutricionista;Perus;Norte (fora RMSP central);06506-776;-23.395128;-46.738961;Indicação;2024-06-27;2024-09-27;18;8759;Sim;Retorno positivo
+CLI-0164;Prisma Nutrição;Nutricionista;Perus;Norte (fora RMSP central);08691-183;-23.399575;-46.734395;Indicação;2024-03-19;2024-08-25;24;3481;Não;
+CLI-0165;Ápice Treinamento Funcional;Academia / Personal Trainer;Osasco;Oeste (fora RMSP central);02288-109;-23.521589;-46.802106;Indicação;2023-12-23;2024-11-25;20;7971;Não;
+CLI-0166;Equilíbrio Drogaria;Farmácia;Vila Ré;Leste;04499-743;-23.518235;-46.515619;Loja Física;2023-11-28;2024-10-18;25;419;Sim;Retorno positivo
+CLI-0167;Viva Drogaria;Farmácia;Santo André;Sul (ABC);;-23.666791;-46.535425;Indicação;2025-09-06;2024-08-22;3;7841;Sim;Retorno positivo
+CLI-0168;Equilíbrio Consultório de Nutrição;Nutricionista;Guaianases;Leste;05388-823;-23.547302;-46.419036;Marketplace;2024-08-07;2025-05-28;10;170;Não;
+CLI-0169;Foco Estética;Clínica Estética;Guarulhos;Norte (fora RMSP central);08935-299;-23.446229;-46.516708;Distribuidor;2024-04-28;2025-03-17;23;44294;Não;
+CLI-0170;BemStar Consultório de Nutrição;Nutricionista;Liberdade;Centro;01624-467;-23.567148;-46.626711;Distribuidor;2024-04-07;2025-04-13;16;44415;Sim;
+CLI-0171;Viva Distribuidora;Distribuidor de Suplementos;Itaquaquecetuba;Leste (fora RMSP central);07063-465;-23.502401;-46.359836;Loja Física;2025-06-17;;0;0;Não;
+CLI-0172;Vitalis Clínica Médica;Consultório Médico;Perus;Norte (fora RMSP central);05830-595;-23.399721;-46.733606;Marketplace;2026-02-11;2025-06-29;22;22255;Sim;Aumentou pedido
+CLI-0173;Raiz Nutrição;Nutricionista;itaquaquecetuba  ;Leste (fora RMSP central);07587-564;-23.482139;-46.333169;Marketplace;2026-06-21;2025-03-21;26;5395;Não;
+CLI-0174;Vitalis House Nutrition;Loja de Suplementos;Cotia;Oeste (fora RMSP central);;-23.613574;-46.909822;Marketplace;2023-10-13;2025-04-04;17;181;Não;
+CLI-0175;Novo Ciclo Suplementos;Loja de Suplementos;Itaquaquecetuba;Leste (fora RMSP central);08950-473;-23.495319;-46.350454;Distribuidor;2025-11-05;2025-03-19;19;10069;Sim;Aumentou pedido
+CLI-0176;Harmonia Suplementos;Loja de Suplementos;Osasco;Oeste (fora RMSP central);07548-265;-23.544786;-46.792896;Indicação;2024-03-31;2024-07-28;15;45901;Não;
+CLI-0177;Pura Espaço Estético;Clínica Estética;Sé;Centro;04112-573;-23.546871;-46.625571;Marketplace;2025-12-25;2024-12-10;9;6269;Não;
+CLI-0178;Origem Academia;Academia / Personal Trainer;Liberdade;Centro;;-23.567299;-46.647600;Loja Física;2024-08-27;2025-09-17;23;73612;Não;
+CLI-0179;Bioforma Clínica Médica;Consultório Médico;São Miguel Paulista;Leste;06423-730;-23.492523;-46.432539;Distribuidor;2025-12-23;2024-08-08;30;28210;Não;
+CLI-0180;Vitalis House Nutrition;Loja de Suplementos;Osasco;Oeste (fora RMSP central);01804-129;-23.527544;-46.787422;Indicação;2026-05-28;2026-02-24;22;8209;Não;
+CLI-0181;Ápice Suplementos;Loja de Suplementos;Tucuruvi;Norte;01609-799;-23.490307;-46.593983;Marketplace;2024-03-03;;0;0;Não;
+CLI-0182;Nutrivida Academia;Academia / Personal Trainer;Cotia;Oeste (fora RMSP central);07602-723;-23.597361;-46.926524;Indicação;2025-06-12;2025-07-17;21;485;Não;
+CLI-0183;Ápice Clínica Médica;Consultório Médico;Campo Belo;Sul;05934-902;-23.631167;-46.678532;Loja Física;2024-12-03;2026-05-23;30;1726;Não;
+CLI-0184;Viva Treinamento Funcional;Academia / Personal Trainer;Perus;Norte (fora RMSP central);08087-651;-23.410194;-46.758987;Distribuidor;2024-07-30;2026-02-25;25;51294;Sim;Sem retorno
+CLI-0185;Raiz Suplementos;Loja de Suplementos;jabaquara  ;Sul;06431-265;-23.663071;-46.631271;Distribuidor;2026-01-24;;0;0;Não;
+CLI-0186;Renove Distribuidora;Distribuidor de Suplementos;São Miguel Paulista;Leste;02138-873;-23.507842;-46.446673;Indicação;2026-01-15;2026-02-17;3;1245;Não;
+CLI-0187;Equilíbrio Distribuidora;Distribuidor de Suplementos;Guaianases;Leste;08853-592;-23.537813;-46.408986;Marketplace;2025-07-04;2025-11-24;29;2169;Não;
+CLI-0188;Saúde Plena House Nutrition;Loja de Suplementos;Sé;Centro;01233-956;-23.555418;-46.617110;Distribuidor;2025-08-19;;0;0;Não;
+CLI-0189;BemStar Treinamento Funcional;Academia / Personal Trainer;Ipiranga;Sul;05338-167;-23.606793;-46.621403;Indicação;2025-07-17;2024-11-26;8;19540;Não;
+CLI-0190;Harmonia Farmácia;Farmácia;Perus;Norte (fora RMSP central);01645-954;-23.384409;-46.729769;Distribuidor;2024-01-27;2025-11-06;16;5311;Não;
+CLI-0191;Pura Farmácia;Farmácia;Diadema;Sul (ABC);07435-063;-23.689479;-46.630421;distribuidor;2025-11-23;2026-07-04;24;11326;Não;
+CLI-0192;Foco Clínica Médica;Consultório Médico;Bela Vista;Centro;08927-486;-23.569249;-46.657600;Loja Física;2025-12-10;2025-11-20;8;11582;Não;
+CLI-0193;Origem Suplementos;Loja de Suplementos;Sé;Centro;05974-977;-23.546184;-46.645203;Marketplace;2024-03-04;2025-10-20;23;38908;Não;
+CLI-0194;Renove Suplementos;Loja de Suplementos;Carapicuíba;Oeste (fora RMSP central);07359-350;-23.516040;-46.842023;Indicação;2024-10-21;2026-06-21;12;23474;Sim;Aumentou pedido
+CLI-0195;Vitalis Consultório Médico;Consultório Médico;Jabaquara;Sul;05696-820;-23.656166;-46.643311;Loja Física;2023-07-28;2025-12-12;5;2859;Não;
+CLI-0196;Renove Clínica de Estética;Clínica Estética;Itaquaquecetuba;Leste (fora RMSP central);02155-624;-23.487438;-46.360518;Loja Física;2024-12-08;;0;0;Não;
+CLI-0197;Origem Treinamento Funcional;Academia / Personal Trainer;Santo Amaro;Sul;03858-890;-23.645333;-46.699953;Distribuidor;2026-03-14;2026-04-12;21;54372;Sim;
+CLI-0198;Movimento House Nutrition;Loja de Suplementos;Mogi das Cruzes;Leste (fora RMSP central);03915-669;-23.519929;-46.195091;Distribuidor;2024-07-19;2026-01-13;30;1957;Não;
+CLI-0199;BemStar Drogaria;Farmácia;Carapicuíba;Oeste (fora RMSP central);02048-278;-23.524226;-46.843093;Loja Física;2025-06-24;;0;0;Não;
+CLI-0200;Bioforma Nutrição;Nutricionista;itaquaquecetuba  ;Leste (fora RMSP central);02653-380;-23.491962;-46.346023;Loja Física;2023-10-31;2026-07-06;23;13780;Não;
+CLI-0201;Viva Drogaria;Farmácia;Vila Mariana;Sul;;-23.579166;-46.649260;Loja Física;2024-10-15;2026-05-24;18;2889;Sim;Sem retorno
+CLI-0202;Pura Treinamento Funcional;Academia / Personal Trainer;Santo André;Sul (ABC);01410-409;-23.651381;-46.524496;Loja Física;2023-11-12;2024-09-30;1;158;Não;
+CLI-0203;Cuidar Studio Fitness;Academia / Personal Trainer;Tatuapé;Leste;02007-542;-23.535629;-46.588667;Loja Física;2024-05-03;2025-08-21;9;59415;Sim;Retorno positivo
+CLI-0204;Foco Consultório Médico;Consultório Médico;Guarulhos;Norte (fora RMSP central);02946-999;-23.467185;-46.526951;Marketplace;2024-03-04;2024-09-27;11;2481;Sim;
+CLI-0205;Ápice Treinamento Funcional;Academia / Personal Trainer;São Bernardo do Campo;Sul (ABC);01728-133;-23.696011;-46.571060;Marketplace;2025-12-11;2024-11-04;28;58166;Sim;Sem retorno
+CLI-0206;Renove Studio Fitness;Academia / Personal Trainer;Sé;Centro;07670-083;-23.541289;-46.648214;Indicação;2023-09-12;;0;0;Não;
+CLI-0207;Origem Clínica Médica;Consultório Médico;Liberdade;Centro;06592-391;-23.561191;-46.645074;Distribuidor;2026-06-21;;0;0;Não;
+CLI-0208;Vitalis Nutrição;Nutricionista;Mogi das Cruzes;Leste (fora RMSP central);07787-086;-23.510203;-46.182748;Distribuidor;2025-04-29;2024-11-20;24;2220;Não;
+CLI-0209;Alma Distribuidora;Distribuidor de Suplementos;Cotia;Oeste (fora RMSP central);06300-013;-23.618929;-46.911458;Distribuidor;2023-09-04;2025-04-06;15;342;Não;
+CLI-0210;Vitalis Consultório Médico;Consultório Médico;Mogi das Cruzes;Leste (fora RMSP central);04827-980;-23.536612;-46.179744;Marketplace;2024-07-24;2026-05-01;16;4184;Sim;Retorno positivo
+CLI-0211;Raiz Treinamento Funcional;Academia / Personal Trainer;Campo Belo;Sul;04544-398;-23.620985;-46.675591;Indicação;2024-07-16;2026-02-09;10;52412;Não;
+CLI-0212;Cuidar House Nutrition;Loja de Suplementos;Moema;Sul;06175-932;-23.612673;-46.674439;Distribuidor;2025-03-14;2026-05-02;16;40373;Não;
+CLI-0213;Renove Academia;Academia / Personal Trainer;Campo Belo;Sul;07176-180;-23.637863;-46.654502;Loja Física;2023-07-18;2025-06-26;9;6393;Sim;Retorno positivo
+CLI-0214;Essência Clínica Médica;Consultório Médico;Osasco;Oeste (fora RMSP central);01799-639;-23.531991;-46.792368;Marketplace;2025-05-15;2025-11-12;27;655;Não;
+CLI-0215;Saúde Plena Farmácia;Farmácia;Pinheiros;Oeste;05040-942;-23.560935;-46.702633;Indicação;2025-08-21;2025-11-29;28;589;Sim;Retorno positivo
+CLI-0216;Harmonia Clínica Médica;Consultório Médico;Carapicuíba;Oeste (fora RMSP central);08243-867;-23.526104;-46.821049;Indicação;2024-03-27;;0;0;Não;
+CLI-0217;Prisma House Nutrition;Loja de Suplementos;Santo André;Sul (ABC);06230-930;-23.679237;-46.549390;Indicação;2026-01-30;2026-06-04;21;1393;Não;
+CLI-0218;Origem Consultório Médico;Consultório Médico;Bela Vista;Centro;03550-981;-23.570969;-46.662605;Loja Física;2024-01-03;2025-05-04;3;16064;Não;
+CLI-0219;Essência Consultório de Nutrição;Nutricionista;liberdade  ;Centro;06371-183;-23.562722;-46.621251;Distribuidor;2023-09-16;2024-12-19;30;6576;Sim;Aumentou pedido
+CLI-0220;Pura Atacado de Suplementos;Distribuidor de Suplementos;Pinheiros;Oeste;05637-266;-23.545501;-46.698038;Distribuidor;2024-06-14;2026-03-15;4;33105;Não;
+CLI-0221;Vitalis Atacado de Suplementos;Distribuidor de Suplementos;Perus;Norte (fora RMSP central);01839-121;-23.396111;-46.728579;Loja Física;2024-12-10;2025-07-22;8;16382;Não;
+CLI-0222;Essência Distribuidora;Distribuidor de Suplementos;Vila Mariana;Sul;;-23.594606;-46.643300;Indicacao;2025-09-19;;0;0;Não;
+CLI-0223;Foco Clínica Nutricional;Nutricionista;Sé;Centro;;-23.540216;-46.616968;Distribuidor;2025-08-01;2026-04-17;19;5903;Não;
+CLI-0016;Vitalis Suplementos;Loja de Suplementos;Guaianases;Leste;01359-458;-23.548904;-46.430344;Loja Física;2025-01-23;2024-10-06;29;4442;Não;
+CLI-0225;Foco Distribuidora;Distribuidor de Suplementos;Tucuruvi;Norte;;-23.480446;-46.588586;Loja Física;2024-11-22;2024-07-16;9;13916;Sim;
+CLI-0226;Nutrivida Espaço Estético;Clínica Estética;Santo André;Sul (ABC);01751-133;-23.652988;-46.540267;Loja Física;2023-11-18;2025-04-08;13;8782;Não;
+CLI-0227;Pura Atacado de Suplementos;Distribuidor de Suplementos;Carapicuíba;Oeste (fora RMSP central);08811-084;-23.521170;-46.830283;Marketplace;2025-04-04;2026-05-20;4;1061;Não;
+CLI-0228;Renove Clínica de Estética;Clínica Estética;Diadema;Sul (ABC);01954-384;-23.694095;-46.631526;Loja Física;2026-03-31;2024-11-17;2;-1240;Sim;Aumentou pedido
+CLI-0229;Bioforma House Nutrition;Loja de Suplementos;Diadema;Sul (ABC);;-23.700210;-46.619355;Indicação;2025-11-30;2024-11-29;25;11106;Não;
+CLI-0230;Harmonia Academia;Academia / Personal Trainer;São Bernardo do Campo;Sul (ABC);08585-774;-23.708589;-46.579556;Marketplace;2024-04-18;2026-03-14;26;44091;Sim;Retorno positivo
+CLI-0231;Vitalis Sports Nutrition;Loja de Suplementos;Cotia;Oeste (fora RMSP central);08842-415;-23.619242;-46.919261;Marketplace;2023-07-17;;0;0;Não;
+CLI-0232;Saúde Plena Clínica Médica;Consultório Médico;Perus;Norte (fora RMSP central);01063-800;-23.398469;-46.755310;Indicação;2024-12-15;;0;0;Não;
+CLI-0233;Harmonia House Nutrition;Loja de Suplementos;Campo Belo;Sul;01935-447;-23.637713;-46.683651;Marketplace;2026-03-11;;0;0;Não;
+CLI-0234;Equilíbrio Espaço Estético;Clínica Estética;santo amaro  ;Sul;04010-894;-23.668426;-46.711153;Loja Física;2026-01-29;2025-12-23;8;6336;Não;
+CLI-0235;Nutrivida Clínica Nutricional;Nutricionista;Bela Vista;Centro;05728-091;-23.579502;-46.643600;Marketplace;2025-03-03;2025-07-10;19;85038;Sim;Retorno positivo
+CLI-0236;BemStar House Nutrition;Loja de Suplementos;Santo André;Sul (ABC);06434-974;-23.679878;-46.529992;Indicação;2024-03-19;2026-06-26;17;50767;Não;
+CLI-0237;Raiz Atacado de Suplementos;Distribuidor de Suplementos;Pinheiros;Oeste;06588-119;-23.568933;-46.684014;Loja Física;2024-07-05;;0;0;Não;
+CLI-0238;Origem House Nutrition;Loja de Suplementos;Diadema;Sul (ABC);04327-426;-23.700788;-46.633471;Distribuidor;2026-02-14;2024-07-30;8;7163;Não;
+CLI-0239;Renove Consultório de Nutrição;Nutricionista;Guaianases;Leste;;-23.532737;-46.397141;Indicação;2025-08-24;2026-05-24;6;8057;Não;
+CLI-0240;Origem Studio Fitness;Academia / Personal Trainer;Carapicuíba;Oeste (fora RMSP central);05395-272;-23.529775;-46.826662;Indicação;2025-06-25;2025-07-02;4;11518;Sim;Aumentou pedido
+CLI-0241;Harmonia Suplementos;Loja de Suplementos;Ipiranga;Sul;03959-323;-23.592761;-46.618892;Loja Física;2024-03-28;2026-02-19;6;13855;Sim;Aumentou pedido
+CLI-0242;Ápice Drogaria;Farmácia;Ipiranga;Sul;01978-423;-23.603968;-46.604351;Loja Física;2025-11-04;2025-04-15;9;3850;Não;
+CLI-0243;Cuidar Clínica Médica;Consultório Médico;Cotia;Oeste (fora RMSP central);01996-422;-23.589386;-46.913137;Distribuidor;2024-02-10;2026-04-06;7;43403;Não;
+CLI-0244;Nutrivida Consultório Médico;Consultório Médico;Tucuruvi;Norte;01585-544;-23.489135;-46.603839;Marketplace;2025-10-09;;0;0;Não;
+CLI-0245;Essência Clínica Nutricional;Nutricionista;Santo Amaro;Sul;07031-831;-23.653195;-46.709128;Distribuidor;2024-06-19;2026-06-18;1;238;Não;
+CLI-0246;BemStar Sports Nutrition;Loja de Suplementos;Jabaquara;Sul;03325-129;-23.656687;-46.638470;Indicação;2024-03-30;2024-12-08;22;2105;Não;
+CLI-0247;Origem Clínica Médica;Consultório Médico;Jabaquara;Sul;07236-259;-23.650445;-46.633397;Indicação;2023-12-27;2026-06-13;12;26937;Não;
+CLI-0248;Vitalis Consultório Médico;Consultório Médico;Liberdade;Centro;06365-970;-23.569749;-46.630069;Distribuidor;2026-02-07;2024-12-18;6;1801;Sim;Retorno positivo
+CLI-0249;Cuidar Clínica Médica;Consultório Médico;Pinheiros;Oeste;07024-436;-23.553059;-46.693163;Marketplace;2024-11-08;2025-05-25;14;43077;Sim;Retorno positivo
+CLI-0250;Equilíbrio Consultório de Nutrição;Nutricionista;Lapa;Oeste;05429-473;-23.515229;-46.704758;Indicação;2024-12-17;;0;0;Não;
+CLI-0251;Viva Clínica Médica;Consultório Médico;Moema;Sul;02213-601;-23.603713;-46.668955;Distribuidor;2023-08-05;2026-04-28;3;48059;Sim;Sem retorno
+CLI-0252;Nutrivida Consultório Médico;Consultório Médico;Mogi das Cruzes;Leste (fora RMSP central);02966-500;-23.520435;-46.191849;Loja Física;2026-03-30;2024-10-29;7;23821;Não;
+CLI-0253;Harmonia Treinamento Funcional;Academia / Personal Trainer;Vila Ré;Leste;06270-594;-23.544546;-46.513240;Indicacao;2025-06-02;2024-10-24;11;29206;Não;
+CLI-0254;Harmonia Atacado de Suplementos;Distribuidor de Suplementos;Pinheiros;Oeste;04364-762;-23.575948;-46.685832;Distribuidor;2025-08-17;2025-05-08;1;29013;Sim;
+CLI-0255;Raiz Sports Nutrition;Loja de Suplementos;Cotia;Oeste (fora RMSP central);08740-529;-23.600110;-46.929877;Loja Física;2026-02-20;2026-04-29;26;2596;Sim;Aumentou pedido
+CLI-0256;Movimento Consultório de Nutrição;Nutricionista;Santo Amaro;Sul;05801-313;-23.648089;-46.699890;Distribuidor;2024-01-10;2025-12-03;30;23755;Não;
+CLI-0257;Bioforma Clínica Médica;Consultório Médico;Cotia;Oeste (fora RMSP central);01617-740;-23.614280;-46.905465;Distribuidor;2025-06-22;2025-02-13;20;73463;Não;
+CLI-0258;Novo Ciclo Farmácia de Manipulação;Farmácia;Liberdade;Centro;04448-274;-23.565643;-46.619898;Indicação;2025-03-20;;0;0;Não;
+CLI-0259;Equilíbrio Clínica Nutricional;Nutricionista;Santo Amaro;Sul;08436-974;-23.659464;-46.695300;Marketplace;2024-11-25;2025-12-22;8;12562;Sim;Aumentou pedido
+CLI-0260;Cuidar Espaço Estético;Clínica Estética;São Miguel Paulista;Leste;05610-586;-23.480354;-46.459267;Distribuidor;2025-11-29;2026-04-05;18;42994;Não;
+CLI-0261;Equilíbrio Drogaria;Farmácia;Mogi das Cruzes;Leste (fora RMSP central);01154-913;-23.537834;-46.184433;Distribuidor;2026-05-10;2025-05-12;26;6284;Não;
+CLI-0262;Novo Ciclo Farmácia;Farmácia;Tucuruvi;Norte;07037-672;-23.486730;-46.597305;Marketplace;2025-12-16;2025-10-28;13;137;Sim;Retorno positivo
+CLI-0263;Foco Treinamento Funcional;Academia / Personal Trainer;Pinheiros;Oeste;04428-132;-23.555176;-46.704958;Marketplace;2024-04-26;;0;0;Não;
+CLI-0264;Nutrivida Sports Nutrition;Loja de Suplementos;Santo Amaro;Sul;06376-256;-23.653868;-46.726870;Indicação;2024-08-25;2025-10-13;13;23222;Sim;
+CLI-0265;Renove Clínica Nutricional;Nutricionista;São Miguel Paulista;Leste;04084-255;-23.512918;-46.449421;Loja Física;2026-04-22;2026-01-24;13;2412;Não;
+CLI-0266;Nutrivida Atacado de Suplementos;Distribuidor de Suplementos;Itaquaquecetuba;Leste (fora RMSP central);05761-594;-23.488383;-46.362561;Indicação;2024-11-27;2024-09-20;21;49689;Sim;Retorno positivo
+CLI-0267;Alma Clínica Nutricional;Nutricionista;Moema;Sul;;-23.607326;-46.660280;Marketplace;2025-03-13;2025-06-30;30;12845;Sim;Aumentou pedido
+CLI-0268;Nutrivida Consultório Médico;Consultório Médico;Vila Mariana;Sul;03045-388;-23.572735;-46.648511;Indicação;2024-02-09;2025-06-27;27;62614;Não;
+CLI-0269;Pura Nutrição;Nutricionista;Osasco;Oeste (fora RMSP central);08858-883;-23.526166;-46.805161;Indicação;2023-12-19;;0;0;Não;
+CLI-0270;Saúde Plena Consultório Médico;Consultório Médico;Santana;Norte;08723-397;-23.497926;-46.632530;Indicação;2023-09-09;2024-07-16;29;40325;Não;
+CLI-0271;Harmonia Estética;Clínica Estética;Osasco;Oeste (fora RMSP central);03723-779;-23.525728;-46.795632;Loja Física;2024-09-01;2026-06-14;26;50569;Não;
+CLI-0272;Renove Farmácia de Manipulação;Farmácia;Tatuapé;Leste;08202-770;-23.546705;-46.562270;Loja Física;2025-06-09;2024-08-21;26;1853;Não;
+CLI-0273;Renove Clínica Médica;Consultório Médico;Santo Amaro;Sul;05985-181;-23.668894;-46.703622;Marketplace;2024-01-07;;0;0;Não;
+CLI-0053;Foco Farmácia de Manipulação;Farmácia;Santo Amaro;Sul;04854-605;-23.637826;-46.696546;Indicação;2023-07-08;2025-07-05;29;61174;Não;
+CLI-0275;Ápice Clínica de Estética;Clínica Estética;Vila Mariana;Sul;02066-106;-23.595053;-46.624459;Indicação;2025-12-26;2025-06-11;13;137;Não;
+CLI-0276;Essência Suplementos;Loja de Suplementos;Diadema;Sul (ABC);06885-332;-23.691245;-46.620136;Loja Física;2023-08-28;2024-07-28;28;1123;Sim;
+CLI-0277;Renove Studio Fitness;Academia / Personal Trainer;Santana;Norte;02949-900;-23.486475;-46.645996;Marketplace;2023-07-03;2024-10-26;20;89271;Sim;Sem retorno
+CLI-0278;Essência Consultório de Nutrição;Nutricionista;Liberdade;Centro;01291-969;-23.555586;-46.619414;Distribuidor;2026-05-14;;0;0;Não;
+CLI-0279;Origem Treinamento Funcional;Academia / Personal Trainer;Vila Mariana;Sul;04949-778;-23.580662;-46.626699;Distribuidor;2025-08-14;2025-09-02;29;11713;Sim;
+CLI-0280;Movimento Drogaria;Farmácia;Campo Belo;Sul;01011-653;-23.616870;-46.677950;Indicação;2026-05-22;2026-06-29;29;90852;Sim;Retorno positivo
+CLI-0281;BemStar Farmácia;Farmácia;Cotia;Oeste (fora RMSP central);06494-992;-23.595207;-46.906554;Marketplace;2026-01-10;2024-10-05;9;1931;Não;
+CLI-0282;Essência Estética;Clínica Estética;Campo Belo;Sul;;-23.625068;-46.657975;Loja Física;2025-01-19;2025-09-04;22;30209;Sim;Retorno positivo
+CLI-0283;Foco Clínica Médica;Consultório Médico;Guaianases;Leste;02454-354;-23.546901;-46.400334;Marketplace;2024-08-09;2026-06-15;19;632;Não;
+CLI-0284;Novo Ciclo Farmácia de Manipulação;Farmácia;Santo Amaro;Sul;08089-600;-23.663753;-46.716997;loja fisica;2026-05-04;2025-10-18;6;36904;Sim;
+CLI-0285;BemStar Farmácia de Manipulação;Farmácia;Tatuapé;Leste;07555-473;-23.536341;-46.593105;Distribuidor;2026-05-07;2026-04-13;12;38837;Não;
+CLI-0286;Bioforma Clínica Médica;Consultório Médico;Tatuapé;Leste;08809-364;-23.538210;-46.588387;Marketplace;2023-09-07;2025-02-12;7;54113;Sim;Retorno positivo
+CLI-0287;Ápice Sports Nutrition;Loja de Suplementos;Diadema;Sul (ABC);08779-985;-23.672020;-46.632463;Indicação;2025-09-15;2025-07-20;23;6159;Sim;Aumentou pedido
+CLI-0288;Foco Clínica Médica;Consultório Médico;Guaianases;Leste;05440-318;-23.562789;-46.417954;Marketplace;2026-02-22;2024-08-16;28;595;Sim;Retorno positivo
+CLI-0289;Movimento House Nutrition;Loja de Suplementos;Guarulhos;Norte (fora RMSP central);07687-235;-23.438367;-46.523863;Distribuidor;2024-10-11;2025-01-02;17;27847;Não;
+CLI-0290;Ápice Treinamento Funcional;Academia / Personal Trainer;Bela Vista;Centro;06835-494;-23.568299;-46.665038;Distribuidor;2024-06-04;2024-12-24;25;4272;Sim;Aumentou pedido
+CLI-0291;Novo Ciclo Clínica Médica;Consultório Médico;Tucuruvi;Norte;06392-754;-23.481126;-46.603160;Indicação;2025-12-09;2024-11-28;22;25863;Não;
+CLI-0292;Cuidar Clínica Médica;Consultório Médico;Tucuruvi;Norte;07848-809;-23.480878;-46.598801;Distribuidor;2025-07-26;2025-11-24;4;3032;Sim;Retorno positivo
+CLI-0293;Ápice Clínica Médica;Consultório Médico;Guarulhos;Norte (fora RMSP central);02551-063;-23.448382;-46.545005;Marketplace;2025-09-02;;0;0;Não;
+CLI-0294;Vitalis Farmácia;Farmácia;Mogi das Cruzes;Leste (fora RMSP central);02277-713;-23.512025;-46.205074;Distribuidor;2023-09-21;2025-08-02;19;33394;Não;
+CLI-0295;Equilíbrio Consultório de Nutrição;Nutricionista;Cotia;Oeste (fora RMSP central);06439-406;-23.616177;-46.913477;Distribuidor;2025-12-22;2025-02-05;17;16672;Não;
+CLI-0296;BemStar Drogaria;Farmácia;Guarulhos;Norte (fora RMSP central);04308-807;-23.461773;-46.524297;Distribuidor;2025-03-29;2024-10-09;24;5745;Sim;Aumentou pedido
+CLI-0297;Pura Studio Fitness;Academia / Personal Trainer;Ipiranga;Sul;01519-991;-23.583124;-46.607354;Indicação;2025-08-14;2024-10-25;23;6287;Não;
+CLI-0298;Origem Farmácia;Farmácia;Campo Belo;Sul;01439-448;-23.624716;-46.670475;Indicação;2024-06-09;2024-09-15;6;6373;Não;
+CLI-0299;Viva Clínica Médica;Consultório Médico;Vila Ré;Leste;04088-063;-23.538999;-46.515152;Indicação;2023-07-17;;0;0;Não;
+CLI-0300;Bioforma Espaço Estético;Clínica Estética;Bela Vista;Centro;05298-920;-23.570907;-46.671892;Distribuidor;2025-09-15;2026-03-31;2;47;Não;
+CLI-0301;Alma Atacado de Suplementos;Distribuidor de Suplementos;Moema;Sul;;-23.594129;-46.662126;Indicação;2024-03-30;2025-11-08;18;36643;Sim;Aumentou pedido
+CLI-0302;Bioforma House Nutrition;Loja de Suplementos;Santo Amaro;Sul;05148-444;-23.637947;-46.719100;Marketplace;2026-06-11;;0;0;Não;
+CLI-0303;Essência House Nutrition;Loja de Suplementos;Vila Mariana;Sul;;-23.579107;-46.652689;Distribuidor;2026-03-14;2025-10-17;4;222;Sim;Retorno positivo
+CLI-0304;Renove Academia;Academia / Personal Trainer;Guarulhos;Norte (fora RMSP central);02755-305;-23.446104;-46.532309;Distribuidor;2024-11-29;2026-04-07;14;436198;Sim;Aumentou pedido
+CLI-0305;BemStar Clínica Médica;Consultório Médico;Guaianases;Leste;;-23.543475;-46.412375;Marketplace;2024-01-11;2026-03-20;2;2948;Não;
+CLI-0306;Raiz Farmácia de Manipulação;Farmácia;Itaquera;Leste;04302-701;-23.529722;-46.450512;Indicação;2026-01-23;2025-09-01;6;39364;Não;
+CLI-0307;Pura Drogaria;Farmácia;Ipiranga;Sul;01352-869;-23.602112;-46.605072;Distribuidor;2025-04-01;;0;0;Não;
+CLI-0308;Prisma Clínica Médica;Consultório Médico;Osasco;Oeste (fora RMSP central);04945-421;-23.533505;-46.794880;Marketplace;2025-11-29;2026-05-31;15;73752;Sim;
+CLI-0309;Vitalis Studio Fitness;Academia / Personal Trainer;Lapa;Oeste;06841-789;-23.515758;-46.685317;Loja Física;2024-11-12;2026-03-01;3;14833;Sim;Sem retorno
+CLI-0310;Pura Sports Nutrition;Loja de Suplementos;Liberdade;Centro;07583-499;-23.550908;-46.631672;Marketplace;2023-10-19;2026-03-06;27;6705;Não;
+CLI-0311;Saúde Plena Sports Nutrition;Loja de Suplementos;Vila Mariana;Sul;;-23.577100;-46.634365;Loja Física;2024-12-08;2025-03-08;11;48736;Sim;Sem retorno
+CLI-0312;Ápice Consultório Médico;Consultório Médico;Vila Mariana;Sul;03654-358;-23.576805;-46.657266;Indicação;2023-08-19;2026-03-31;10;14258;Não;
+CLI-0313;Cuidar Atacado de Suplementos;Distribuidor de Suplementos;Santo Amaro;Sul;02057-514;-23.652021;-46.712598;Marketplace;2023-09-27;2025-09-01;14;18990;Sim;Aumentou pedido
+CLI-0314;Raiz Atacado de Suplementos;Distribuidor de Suplementos;Tucuruvi;Norte;01484-758;-23.490955;-46.603719;Distribuidor;2024-07-21;2025-03-04;30;46570;Sim;Retorno positivo
+CLI-0315;Movimento Treinamento Funcional;Academia / Personal Trainer;Tucuruvi;Norte;01491-270;-23.473183;-46.607008;distribuidor;2024-02-10;2025-07-17;11;65709;Sim;Aumentou pedido
+CLI-0316;Vitalis Farmácia de Manipulação;Farmácia;Lapa;Oeste;;-23.513784;-46.693840;Distribuidor;2024-08-05;2026-02-25;27;5389;Não;
+CLI-0317;Cuidar Distribuidora;Distribuidor de Suplementos;Pinheiros;Oeste;05060-184;-23.544676;-46.702148;Distribuidor;2026-06-10;;0;0;Não;
+CLI-0318;Raiz Farmácia;Farmácia;São Bernardo do Campo;Sul (ABC);04712-244;-23.705810;-46.562304;Loja Física;2023-12-04;2025-06-02;28;39511;Não;
+CLI-0319;Cuidar Suplementos;Loja de Suplementos;Santo Amaro;Sul;02777-546;-23.653568;-46.697919;Indicação;2026-06-26;2025-01-11;6;5192;Sim;
+CLI-0320;Foco Drogaria;Farmácia;Diadema;Sul (ABC);03088-655;-23.688300;-46.611762;Indicação;2026-04-11;2026-02-22;10;6214;Não;
+CLI-0321;Cuidar Distribuidora;Distribuidor de Suplementos;Bela Vista;Centro;;-23.566442;-46.638859;Distribuidor;2026-02-21;2026-06-09;29;57711;Não;
+CLI-0322;Origem Drogaria;Farmácia;Santana;Norte;03880-513;-23.505352;-46.623761;Distribuidor;2025-10-10;2025-02-21;10;29426;Não;
+CLI-0323;Pura Academia;Academia / Personal Trainer;Itaquera;Leste;06036-149;-23.519299;-46.438702;Marketplace;2025-04-12;2026-05-10;21;18914;Não;
+CLI-0324;Raiz Treinamento Funcional;Academia / Personal Trainer;Santo Amaro;Sul;03014-060;-23.640397;-46.707316;Loja Física;2024-07-16;2025-08-11;20;20717;Não;
+CLI-0325;Harmonia Consultório Médico;Consultório Médico;Perus;Norte (fora RMSP central);02169-556;-23.395356;-46.759540;Loja Física;2026-02-03;2024-07-28;2;8402;Não;
+CLI-0326;Renove Estética;Clínica Estética;Carapicuíba;Oeste (fora RMSP central);06750-841;-23.519377;-46.840279;Loja Física;2023-08-04;2025-04-09;28;11727;Não;
+CLI-0327;Prisma Clínica Nutricional;Nutricionista;Perus;Norte (fora RMSP central);08647-328;-23.384070;-46.726385;Marketplace;2024-03-23;2025-01-13;27;47579;Sim;Retorno positivo
+CLI-0328;Bioforma Nutrição;Nutricionista;Lapa;Oeste;05485-879;-23.521743;-46.703376;Loja Física;2025-07-07;2026-04-23;29;76473;Não;
+CLI-0329;Cuidar Drogaria;Farmácia;Ipiranga;Sul;07268-579;-23.599279;-46.594497;Distribuidor;2025-03-29;2024-10-06;29;879;Sim;
+CLI-0330;Vitalis Clínica de Estética;Clínica Estética;Lapa;Oeste;04120-813;-23.510944;-46.695480;Loja Física;2023-08-15;2025-10-16;10;8293;Sim;Sem retorno
+CLI-0331;Pura Atacado de Suplementos;Distribuidor de Suplementos;Perus;Norte (fora RMSP central);08389-810;-23.396453;-46.758511;Loja Física;2023-10-11;2025-01-21;3;119;Não;
+CLI-0332;Essência Consultório de Nutrição;Nutricionista;Tatuapé;Leste;05584-222;-23.556216;-46.565882;Loja Física;2025-05-03;;0;0;Não;
+CLI-0333;Viva Consultório de Nutrição;Nutricionista;jabaquara  ;Sul;05932-229;-23.645248;-46.632700;Loja Física;2025-06-12;2025-06-06;22;51028;Não;
+CLI-0334;BemStar Clínica Médica;Consultório Médico;Ipiranga;Sul;03272-183;-23.603081;-46.612177;Indicação;2024-05-23;2025-06-08;29;88091;Não;
+CLI-0335;Bioforma Drogaria;Farmácia;Lapa;Oeste;07588-778;-23.528649;-46.683911;Indicação;2023-09-27;2024-10-08;3;51350;Sim;
+CLI-0336;BemStar Clínica Médica;Consultório Médico;Itaquaquecetuba;Leste (fora RMSP central);06284-050;-23.477262;-46.335199;Distribuidor;2023-09-07;2025-01-27;27;3119;Sim;Retorno positivo
+CLI-0337;Saúde Plena Distribuidora;Distribuidor de Suplementos;Tucuruvi;Norte;06138-517;-23.483463;-46.593352;Indicação;2025-07-21;2025-08-28;22;4932;Não;
+CLI-0338;Movimento Atacado de Suplementos;Distribuidor de Suplementos;Itaquera;Leste;06388-475;-23.545715;-46.455586;Indicação;2026-06-30;2026-04-03;23;66933;Não;
+CLI-0339;Novo Ciclo Farmácia de Manipulação;Farmácia;Jabaquara;Sul;02451-282;-23.632409;-46.638222;Distribuidor;2025-01-04;2026-06-08;22;1302;Não;
+CLI-0340;Alma Sports Nutrition;Loja de Suplementos;Itaquera;Leste;02243-383;-23.541500;-46.432595;Marketplace;2024-04-24;2026-05-03;20;64745;Não;
+CLI-0341;Essência Suplementos;Loja de Suplementos;Guarulhos;Norte (fora RMSP central);05453-993;-23.447727;-46.527305;Indicação;2024-09-15;;0;0;Não;
+CLI-0342;Pura Farmácia de Manipulação;Farmácia;Perus;Norte (fora RMSP central);05240-768;-23.382354;-46.735420;Distribuidor;2025-09-02;2026-06-18;10;14465;Sim;Sem retorno
+CLI-0343;Pura Clínica Médica;Consultório Médico;Mogi das Cruzes;Leste (fora RMSP central);01953-119;-23.527485;-46.182389;Indicação;2023-07-14;2026-03-18;11;41044;Não;
+CLI-0344;Origem Atacado de Suplementos;Distribuidor de Suplementos;Moema;Sul;07346-539;-23.599221;-46.668313;Distribuidor;2024-12-20;2025-11-15;12;6448;Sim;Sem retorno
+CLI-0345;Ápice Drogaria;Farmácia;perus  ;Norte (fora RMSP central);06069-372;-23.379130;-46.755132;Indicação;2025-02-11;2025-11-09;22;7021;Não;
+CLI-0346;Essência Suplementos;Loja de Suplementos;Lapa;Oeste;02810-258;-23.535092;-46.696199;Marketplace ;2024-03-08;;0;0;Não;
+CLI-0347;Ápice Farmácia de Manipulação;Farmácia;Guarulhos;Norte (fora RMSP central);03762-191;-23.444741;-46.536429;Marketplace;2024-05-12;2024-12-30;5;39045;Não;
+CLI-0348;Bioforma Sports Nutrition;Loja de Suplementos;Jabaquara;Sul;04579-518;-23.632178;-46.626413;Loja Física;2025-03-03;2025-05-14;9;33708;Sim;Sem retorno
+CLI-0349;Alma Drogaria;Farmácia;Moema;Sul;06442-894;-23.613404;-46.670237;Indicação;2026-01-28;2026-01-03;30;23821;Sim;Sem retorno
+CLI-0350;Bioforma Clínica Médica;Consultório Médico;Jabaquara;Sul;03245-097;-23.652320;-46.645680;Indicação;2025-08-23;2024-11-02;13;616;Não;
+CLI-0351;Viva Nutrição;Nutricionista;Mogi das Cruzes;Leste (fora RMSP central);05818-869;-23.509219;-46.205297;Loja Física;2026-02-05;;0;0;Não;
+CLI-0352;Origem Clínica Médica;Consultório Médico;Guaianases;Leste;08120-168;-23.535375;-46.396103;Indicação;2025-12-01;;0;0;Não;
+CLI-0353;Nutrivida Academia;Academia / Personal Trainer;Tucuruvi;Norte;02267-628;-23.494512;-46.598676;Marketplace;2024-04-07;2026-05-30;21;14969;Não;
+CLI-0354;Origem Atacado de Suplementos;Distribuidor de Suplementos;Santo Amaro;Sul;03670-793;-23.639906;-46.710580;Indicação;2025-04-06;2024-11-06;4;4976;Sim;
+CLI-0355;Harmonia Consultório de Nutrição;Nutricionista;Mogi das Cruzes;Leste (fora RMSP central);04035-345;-23.508465;-46.190304;Marketplace;2025-04-14;;0;0;Não;
+CLI-0356;Ápice Consultório Médico;Consultório Médico;Itaquera;Leste;02607-409;-23.520074;-46.463550;Loja Física;2024-07-25;2026-03-18;25;68300;Não;
+CLI-0357;Foco Estética;Clínica Estética;Bela Vista;Centro;07571-932;-23.571652;-46.656326;Marketplace;2026-01-04;2025-01-15;11;1223;Não;
+CLI-0358;Cuidar Academia;Academia / Personal Trainer;Tucuruvi;Norte;06417-165;-23.466341;-46.616399;Distribuidor;2024-05-27;;0;0;Não;
+CLI-0359;Prisma Farmácia;Farmácia;São Miguel Paulista;Leste;02428-592;-23.495389;-46.438575;Loja Física;2024-09-28;;0;0;Não;
+CLI-0360;Novo Ciclo Studio Fitness;Academia / Personal Trainer;Pinheiros;Oeste;07260-449;-23.551859;-46.704221;Distribuidor;2024-08-22;2024-11-04;18;66007;Sim;Aumentou pedido
+CLI-0361;Renove Nutrição;Nutricionista;Osasco;Oeste (fora RMSP central);07734-243;-23.517318;-46.797840;Loja Física;2023-09-16;;0;0;Não;
+CLI-0362;Movimento House Nutrition;Loja de Suplementos;Tatuapé;Leste;03010-123;-23.552700;-46.566102;Marketplace;2026-01-16;2025-01-05;13;17087;Não;
+CLI-0363;Viva Consultório Médico;Consultório Médico;Jabaquara;Sul;08630-948;-23.658985;-46.626195;Loja Física;2025-01-21;2024-09-23;26;19842;Não;
+CLI-0364;Vitalis Atacado de Suplementos;Distribuidor de Suplementos;Santana;Norte;;-23.486091;-46.616500;Distribuidor;2024-12-17;2025-02-19;27;28619;Não;
+CLI-0365;Cuidar House Nutrition;Loja de Suplementos;Tucuruvi;Norte;07061-376;-23.468853;-46.612414;Indicação;2025-06-02;2025-10-01;11;10725;Não;
+CLI-0366;Origem Consultório Médico;Consultório Médico;Guaianases;Leste;07512-959;-23.552434;-46.423992;Distribuidor;2023-09-23;2026-03-21;13;43229;Não;
+CLI-0367;Origem Clínica Nutricional;Nutricionista;Mogi das Cruzes;Leste (fora RMSP central);;-23.511963;-46.172735;Loja Física;2024-02-12;;0;0;Não;
+CLI-0368;Prisma Academia;Academia / Personal Trainer;Ipiranga;Sul;07995-785;-23.607000;-46.622211;Loja Física;2024-04-15;2025-08-03;7;54828;Sim;Retorno positivo
+CLI-0369;Cuidar Clínica Nutricional;Nutricionista;Diadema;Sul (ABC);02516-295;-23.680185;-46.612717;Indicação;2024-11-30;2025-02-25;2;4562;Sim;Sem retorno
+CLI-0370;Essência Consultório de Nutrição;Nutricionista;Itaquaquecetuba;Leste (fora RMSP central);05432-439;-23.492053;-46.364220;Marketplace;2025-07-09;2025-06-07;9;43436;Não;
+CLI-0371;Ápice Estética;Clínica Estética;Tatuapé;Leste;05392-680;-23.544864;-46.589307;Indicação;2024-02-09;2026-04-27;26;12647;Não;
+CLI-0372;BemStar Distribuidora;Distribuidor de Suplementos;Itaquaquecetuba;Leste (fora RMSP central);01372-455;-23.470001;-46.352285;Marketplace;2024-04-29;2026-05-08;19;13124;Não;
+CLI-0373;Equilíbrio Consultório Médico;Consultório Médico;Cotia;Oeste (fora RMSP central);05889-300;-23.618493;-46.905360;Loja Física;2024-09-27;2026-03-18;5;1717;Não;
+CLI-0374;Vitalis Suplementos;Loja de Suplementos;Liberdade;Centro;05009-163;-23.542922;-46.636190;Distribuidor;2025-05-14;2025-04-20;8;24617;Sim;
+CLI-0375;BemStar Consultório Médico;Consultório Médico;Perus;Norte (fora RMSP central);01541-848;-23.402626;-46.754591;Marketplace;2025-01-06;2024-08-20;12;44488;Sim;Retorno positivo
+CLI-0376;Alma Academia;Academia / Personal Trainer;Liberdade;Centro;;-23.544987;-46.648029;Loja Física;2025-12-29;;0;0;Não;
+CLI-0377;Vitalis Distribuidora;Distribuidor de Suplementos;Bela Vista;Centro;03156-715;-23.580119;-46.667191;Marketplace ;2026-01-02;2026-01-09;5;19400;Não;
+CLI-0378;Ápice Espaço Estético;Clínica Estética;Vila Mariana;Sul;04565-106;-23.590825;-46.651736;Distribuidor;2024-02-16;2025-07-31;21;91407;Sim;
+CLI-0379;Ápice Sports Nutrition;Loja de Suplementos;Perus;Norte (fora RMSP central);03396-170;-23.407687;-46.752822;Marketplace;2024-11-25;2024-11-17;12;18884;Não;
+CLI-0380;Harmonia Consultório Médico;Consultório Médico;Osasco;Oeste (fora RMSP central);05773-379;-23.533406;-46.781352;Marketplace;2024-04-18;;0;0;Não;
+CLI-0381;Alma Suplementos;Loja de Suplementos;Lapa;Oeste;04864-095;-23.536731;-46.707477;Loja Física;2026-06-14;2024-08-19;21;21805;Sim;
+CLI-0382;Novo Ciclo Atacado de Suplementos;Distribuidor de Suplementos;Osasco;Oeste (fora RMSP central);04033-575;-23.537255;-46.809651;Loja Física;2025-05-23;2026-04-11;21;20248;Sim;Sem retorno
+CLI-0383;Movimento Farmácia de Manipulação;Farmácia;Ipiranga;Sul;04256-009;-23.581441;-46.601895;Distribuidor;2025-05-11;;0;0;Não;
+CLI-0384;Cuidar Espaço Estético;Clínica Estética;Liberdade;Centro;06030-905;-23.559678;-46.634995;Marketplace;2024-03-26;2024-11-29;27;22996;Não;
+CLI-0385;Cuidar Academia;Academia / Personal Trainer;Tatuapé;Leste;05606-617;-23.543129;-46.587934;Distribuidor;2026-05-02;2025-03-23;11;43193;Não;
+CLI-0386;Raiz Treinamento Funcional;Academia / Personal Trainer;Osasco;Oeste (fora RMSP central);04742-111;-23.549009;-46.774065;Loja Física;2025-09-21;2026-02-04;15;3093;Não;
+CLI-0387;Prisma Suplementos;Loja de Suplementos;São Bernardo do Campo;Sul (ABC);07409-926;-23.683987;-46.561819;Indicação;2026-07-02;;0;0;Não;
+CLI-0388;Harmonia House Nutrition;Loja de Suplementos;santo andré  ;Sul (ABC);05974-766;-23.656606;-46.528561;Indicação;2025-03-07;2025-03-06;1;25374;Não;
+CLI-0389;Renove Atacado de Suplementos;Distribuidor de Suplementos;São Bernardo do Campo;Sul (ABC);08110-878;-23.692661;-46.552831;Indicação;2023-11-23;2025-04-20;3;4350;Não;
+CLI-0390;Alma Suplementos;Loja de Suplementos;Cotia;Oeste (fora RMSP central);03181-258;-23.606605;-46.922041;Marketplace;2024-05-23;2024-11-23;21;16056;Não;
+CLI-0391;Equilíbrio Farmácia;Farmácia;Tucuruvi;Norte;;-23.494546;-46.597699;Loja Física;2023-07-10;2025-09-12;13;233;Não;
+CLI-0392;Cuidar Consultório de Nutrição;Nutricionista;Osasco;Oeste (fora RMSP central);08102-954;-23.526781;-46.780418;Indicação;2023-08-15;2025-03-06;9;8605;Não;
+CLI-0393;Harmonia Clínica de Estética;Clínica Estética;Tatuapé;Leste;04608-482;-23.527160;-46.574150;Loja Física;2025-06-21;2025-04-19;28;35083;Não;
+CLI-0394;Alma Farmácia de Manipulação;Farmácia;Mogi das Cruzes;Leste (fora RMSP central);08110-648;-23.520595;-46.194825;Marketplace;2026-03-03;2026-03-22;9;2795;Não;
+CLI-0395;Bioforma Espaço Estético;Clínica Estética;Santo André;Sul (ABC);04300-539;-23.664013;-46.551241;Marketplace;2024-01-21;2025-08-15;22;93074;Sim;Retorno positivo
+CLI-0396;Nutrivida House Nutrition;Loja de Suplementos;Santana;Norte;05490-495;-23.492112;-46.639059;Marketplace;2026-04-16;2024-07-25;26;4482;Não;
+CLI-0397;Saúde Plena Sports Nutrition;Loja de Suplementos;São Miguel Paulista;Leste;02608-185;-23.506516;-46.454477;Marketplace;2026-03-17;2024-11-21;10;45706;Não;
+CLI-0398;Renove Suplementos;Loja de Suplementos;Vila Ré;Leste;02734-036;-23.524994;-46.494082;Marketplace;2024-05-15;2025-08-07;17;8944;Sim;
+CLI-0399;BemStar Clínica Nutricional;Nutricionista;Itaquaquecetuba;Leste (fora RMSP central);04965-256;-23.481151;-46.342009;Loja Física;2024-07-12;2025-05-12;17;11275;Não;
+CLI-0400;Renove Distribuidora;Distribuidor de Suplementos;Campo Belo;Sul;;-23.633159;-46.667162;Indicação;2024-03-13;2024-11-12;15;1900;Sim;Retorno positivo
+CLI-0401;Nutrivida Consultório Médico;Consultório Médico;Jabaquara;Sul;02878-577;-23.645492;-46.655734;Indicação;2025-04-06;2024-11-11;27;93378;Sim;Sem retorno
+CLI-0402;Foco Atacado de Suplementos;Distribuidor de Suplementos;Santana;Norte;04676-501;-23.489409;-46.623120;Loja Física;2024-11-15;;0;0;Não;
+CLI-0403;Saúde Plena Drogaria;Farmácia;Cotia;Oeste (fora RMSP central);02898-552;-23.594172;-46.925042;Distribuidor;2025-02-17;2025-06-04;20;809;Sim;
+CLI-0404;Alma Nutrição;Nutricionista;Lapa;Oeste;03398-558;-23.538914;-46.694108;Distribuidor;2024-07-17;2025-11-14;29;110863;Sim;Retorno positivo
+CLI-0405;Vitalis Atacado de Suplementos;Distribuidor de Suplementos;Guarulhos;Norte (fora RMSP central);03677-953;-23.471538;-46.527150;Loja Física;2025-06-12;2025-11-23;18;74305;Sim;Retorno positivo
+CLI-0406;Prisma House Nutrition;Loja de Suplementos;Cotia;Oeste (fora RMSP central);04906-945;-23.604330;-46.932965;Marketplace;2025-12-18;2026-05-30;25;11488;Não;
+CLI-0407;Bioforma House Nutrition;Loja de Suplementos;Santana;Norte;08018-147;-23.520158;-46.642044;Distribuidor;2026-06-04;2025-02-13;12;8344;Não;
+CLI-0408;Novo Ciclo Studio Fitness;Academia / Personal Trainer;Tucuruvi;Norte;06343-634;-23.486145;-46.594597;distribuidor;2024-09-21;2026-02-23;8;5490;Sim;
+CLI-0409;Cuidar Sports Nutrition;Loja de Suplementos;carapicuíba  ;Oeste (fora RMSP central);01381-775;-23.515257;-46.844356;Marketplace;2024-08-25;2025-09-18;21;35324;Não;
+CLI-0410;BemStar Espaço Estético;Clínica Estética;Tatuapé;Leste;05171-828;-23.530561;-46.566052;Distribuidor;2024-05-04;2025-09-14;1;153;Não;
+CLI-0411;Bioforma Clínica de Estética;Clínica Estética;Vila Ré;Leste;05639-861;-23.537758;-46.492662;Distribuidor;2023-11-23;2026-06-27;26;12861;Não;
+CLI-0412;Bioforma House Nutrition;Loja de Suplementos;Moema;Sul;03054-404;-23.606128;-46.647907;Indicação;2024-03-08;2025-03-19;7;33190;Não;
+CLI-0413;Foco Clínica Médica;Consultório Médico;Tatuapé;Leste;08765-051;-23.531254;-46.580769;Distribuidor;2024-06-08;2025-04-09;30;13562;Sim;Sem retorno
+CLI-0414;Bioforma Consultório de Nutrição;Nutricionista;Tucuruvi;Norte;08963-440;-23.472690;-46.595120;Loja Física;2025-12-10;2024-08-07;21;8888;Não;
+CLI-0415;Bioforma Clínica Médica;Consultório Médico;Vila Mariana;Sul;04042-182;-23.585776;-46.646963;Marketplace;2025-06-14;2026-05-13;21;73645;Sim;Retorno positivo
+CLI-0416;Movimento Espaço Estético;Clínica Estética;Itaquera;Leste;03863-979;-23.533655;-46.451108;Indicação;2024-08-13;2024-08-30;8;21137;Não;
+CLI-0417;Renove House Nutrition;Loja de Suplementos;Tucuruvi;Norte;05540-668;-23.464654;-46.616599;Marketplace;2024-12-05;2025-03-13;25;8001;Sim;Retorno positivo
+CLI-0418;BemStar Clínica Nutricional;Nutricionista;Guaianases;Leste;;-23.536897;-46.414215;Loja Física;2024-10-17;2025-06-15;25;10238;Não;
+CLI-0419;Cuidar Nutrição;Nutricionista;Jabaquara;Sul;03564-519;-23.643018;-46.647073;Marketplace;2024-08-30;2025-01-12;15;6498;Sim;Retorno positivo
+CLI-0420;Viva Farmácia;Farmácia;São Bernardo do Campo;Sul (ABC);02540-921;-23.707522;-46.564505;Distribuidor;2025-08-13;2025-03-06;30;11156;Sim;Aumentou pedido
+CLI-0421;Prisma Studio Fitness;Academia / Personal Trainer;Santo Amaro;Sul;02522-002;-23.654209;-46.697115;Loja Física;2024-09-03;2024-09-24;22;2200;Sim;
+CLI-0422;Bioforma Farmácia de Manipulação;Farmácia;Sé;Centro;07386-958;-23.564247;-46.617606;Indicação;2023-09-12;2026-04-04;13;6135;Sim;Sem retorno
+CLI-0423;Vitalis Clínica de Estética;Clínica Estética;Guarulhos;Norte (fora RMSP central);08370-573;-23.442633;-46.545038;Loja Física;2025-01-14;2025-06-21;19;13267;Não;
+CLI-0424;Novo Ciclo Distribuidora;Distribuidor de Suplementos;Ipiranga;Sul;03250-105;-23.588012;-46.605004;Indicação;2023-11-24;2025-08-30;15;9658;Sim;Sem retorno
+CLI-0425;Alma Farmácia de Manipulação;Farmácia;Itaquera;Leste;05164-631;-23.531285;-46.439837;Marketplace;2024-09-07;2024-10-26;12;11275;Não;
+CLI-0426;Bioforma Studio Fitness;Academia / Personal Trainer;Carapicuíba;Oeste (fora RMSP central);02417-451;-23.532588;-46.827828;Marketplace;2023-12-30;2026-03-07;15;30221;Não;
+CLI-0427;Bioforma Studio Fitness;Academia / Personal Trainer;Pinheiros;Oeste;01471-328;-23.554894;-46.694084;Distribuidor;2024-07-13;2026-04-19;25;64113;Não;
+CLI-0428;Essência Estética;Clínica Estética;Lapa;Oeste;02146-459;-23.528666;-46.717490;Loja Física;2024-09-30;2026-04-14;16;54149;Sim;Aumentou pedido
+CLI-0429;Alma Consultório Médico;Consultório Médico;Diadema;Sul (ABC);05662-375;-23.682962;-46.611341;Marketplace;2023-07-09;2024-12-09;22;67581;Não;
+CLI-0430;Cuidar Drogaria;Farmácia;Vila Mariana;Sul;06145-128;-23.599754;-46.636939;Indicação;2025-05-05;;0;0;Não;
+CLI-0431;Pura Treinamento Funcional;Academia / Personal Trainer;Jabaquara;Sul;02047-719;-23.644259;-46.631963;Marketplace;2023-11-18;2025-07-16;21;10633;Sim;Retorno positivo
+CLI-0432;Novo Ciclo Farmácia;Farmácia;Perus;Norte (fora RMSP central);05957-613;-23.391123;-46.742595;Marketplace;2025-04-24;;0;0;Não;
+CLI-0433;Essência Clínica de Estética;Clínica Estética;Guarulhos;Norte (fora RMSP central);;-23.437292;-46.523357;Loja Física;2024-11-06;2024-08-03;13;53526;Não;
+CLI-0434;Saúde Plena Consultório Médico;Consultório Médico;Sé;Centro;05450-283;-23.561176;-46.619212;Loja Física;2026-04-21;2025-12-22;9;9429;Não;
+CLI-0435;Bioforma Clínica Médica;Consultório Médico;Jabaquara;Sul;04396-794;-23.631293;-46.638802;Loja Física;2026-04-02;2025-08-27;8;1074;Sim;Sem retorno
+CLI-0436;Cuidar Treinamento Funcional;Academia / Personal Trainer;Cotia;Oeste (fora RMSP central);06822-307;-23.598216;-46.934092;Distribuidor;2025-10-06;2024-08-28;27;21855;Não;
+CLI-0437;Ápice Clínica de Estética;Clínica Estética;Bela Vista;Centro;;-23.559935;-46.662039;Distribuidor;2025-03-21;2026-04-06;27;11056;Sim;Retorno positivo
+CLI-0438;Prisma House Nutrition;Loja de Suplementos;Carapicuíba;Oeste (fora RMSP central);01142-419;-23.533352;-46.830338;Marketplace;2025-03-03;2026-07-02;28;442;Não;
+CLI-0439;Pura Clínica Nutricional;Nutricionista;Diadema;Sul (ABC);06339-052;-23.699598;-46.625793;distribuidor;2026-04-12;;0;0;Não;
+CLI-0440;Bioforma Studio Fitness;Academia / Personal Trainer;Pinheiros;Oeste;04438-899;-23.576138;-46.685371;Distribuidor;2025-08-06;;0;0;Não;
+CLI-0441;Viva Consultório Médico;Consultório Médico;Carapicuíba;Oeste (fora RMSP central);05316-046;-23.512480;-46.836698;Indicação;2026-01-24;;0;0;Não;
+CLI-0442;Raiz Distribuidora;Distribuidor de Suplementos;Mogi das Cruzes;Leste (fora RMSP central);08393-008;-23.508299;-46.193703;Indicação;2025-03-19;2025-10-11;4;21554;Não;
+CLI-0443;BemStar Clínica Médica;Consultório Médico;Tucuruvi;Norte;05777-439;-23.491644;-46.606253;Distribuidor;2025-06-10;2025-05-26;5;32014;Sim;Retorno positivo
+CLI-0444;Pura Studio Fitness;Academia / Personal Trainer;Santo Amaro;Sul;05978-253;-23.639625;-46.712759;Marketplace;2023-11-03;2026-02-05;26;12673;Não;
+CLI-0445;Essência Atacado de Suplementos;Distribuidor de Suplementos;Mogi das Cruzes;Leste (fora RMSP central);01162-113;-23.511212;-46.185830;Loja Física;2023-12-17;2025-11-15;26;868;Não;
+CLI-0446;Bioforma Clínica Nutricional;Nutricionista;Carapicuíba;Oeste (fora RMSP central);07400-917;-23.527662;-46.823452;Indicação;2023-07-22;2026-06-11;14;56954;Não;
+CLI-0447;Harmonia Consultório Médico;Consultório Médico;Pinheiros;Oeste;08393-620;-23.578001;-46.704297;Indicação;2025-12-05;2026-03-18;26;32355;Não;
+CLI-0448;Novo Ciclo Clínica Médica;Consultório Médico;Santo André;Sul (ABC);04012-825;-23.652877;-46.547990;Marketplace;2026-05-30;2026-01-03;3;23057;Não;
+CLI-0449;Raiz Clínica Nutricional;Nutricionista;Tucuruvi;Norte;06352-473;-23.481788;-46.587101;Indicação;2024-04-26;2026-03-19;9;31225;Sim;Aumentou pedido
+CLI-0450;Origem Studio Fitness;Academia / Personal Trainer;Jabaquara;Sul;08691-214;-23.642125;-46.632243;Indicação;2025-08-22;2026-07-04;14;2820;Sim;
+CLI-0451;Harmonia Clínica Nutricional Unidade 2;Nutricionista;Osasco;Oeste (fora RMSP central);08658-321;-23.523426;-46.775421;Loja Física;2024-02-16;2024-11-17;9;7502;Não;
+CLI-0452;Foco  Suplementos;Loja de Suplementos;Itaquera;Leste;;-23.532667;-46.451242;Indicação;2026-01-04;2026-03-08;5;1707;Não;
+CLI-0453;Vitalis Sports Nutrition Ltda;Loja de Suplementos;Cotia;Oeste (fora RMSP central);08842-415;-23.618242;-46.920161;Marketplace;2023-07-17;;1;2800;Não;
+CLI-0454;Pura Atacado de Suplementos  ;Distribuidor de Suplementos;Perus;Norte (fora RMSP central);;-23.397653;-46.757411;Loja Física;2023-10-11;2025-01-21;1;500;Não;

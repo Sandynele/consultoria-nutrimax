@@ -1,0 +1,6 @@
+﻿item;valor;unidade;observacao
+salario_representante;6500;R$/mes;Fixo mensal do representante externo de visitacao (sem comissao)
+custo_km_rodado;1.10;R$/km;Combustivel + depreciacao media por km rodado (ida e volta ate o cliente)
+capacidade_visitas_mes;55;visitas/mes;Numero medio de visitas que 1 representante consegue fazer por mes em SP, considerando deslocamento
+custo_visita_pontual_fora_raio;180;R$/visita;Visita avulsa (terceirizada/aplicativo) para atender 1 cliente fora do raio padrao, sem comprometer rota fixa
+custo_abertura_2o_ponto;3200;R$ (unico);Custo de estruturar um 2o ponto de apoio (equipamento, deslocamento inicial, sem contar salario do 2o representante)

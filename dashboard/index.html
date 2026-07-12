@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NutriMax Distribuidora — Carteirização Comercial · Dashboard Executivo</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiB2aWV3Qm94PSIwIDAgMTYwIDE2MCI+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODAsODApIHNjYWxlKDEuNTUpIj4KICAgIDxwYXRoIGQ9Ik00MCwwIEwyMCwzNC42NCBMLTIwLDM0LjY0IEwtNDAsMCBMLTIwLC0zNC42NCBMMjAsLTM0LjY0IFoiIGZpbGw9IiNGMkY5RjQiIHN0cm9rZT0iIzEyM0E1MiIgc3Ryb2tlLXdpZHRoPSIzLjQiLz4KICAgIDxwYXRoIGQ9Ik0wLC0yNiBDIDE2LC0xMyAxNiwxMyAwLDI2IEMgLTE2LDEzIC0xNiwtMTMgMCwtMjYgWiIgZmlsbD0iIzJGQTg0RiIvPgogICAgPHBhdGggZD0iTTAsLTIwIEwwLDIwIE0wLC02IEwxMSwtMTQgTTAsLTYgTC0xMSwtMTQgTTAsNiBMMTAsLTEgTTAsNiBMLTEwLC0xIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgICA8Y2lyY2xlIGN4PSIwIiBjeT0iLTIwIiByPSIyLjYiIGZpbGw9IiNGRkZGRkYiLz48Y2lyY2xlIGN4PSIwIiBjeT0iMjAiIHI9IjIuNiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPGNpcmNsZSBjeD0iMTEiIGN5PSItMTQiIHI9IjIuNCIgZmlsbD0iI0ZGRkZGRiIvPjxjaXJjbGUgY3g9Ii0xMSIgY3k9Ii0xNCIgcj0iMi40IiBmaWxsPSIjRkZGRkZGIi8+CiAgICA8Y2lyY2xlIGN4PSIxMCIgY3k9Ii0xIiByPSIyLjQiIGZpbGw9IiNGRkZGRkYiLz48Y2lyY2xlIGN4PSItMTAiIGN5PSItMSIgcj0iMi40IiBmaWxsPSIjRkZGRkZGIi8+CiAgPC9nPgo8L3N2Zz4K">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+<style>
+  :root{
+    --plane:#eef0ee; --surface:#ffffff; --ink:#16181c; --ink-2:#565a52; --muted:#868a80;
+    --hair:rgba(20,22,26,.10); --grid:#e6e7e1;
+    /* Marca NutriMax — navy (ciência/confiança) como accent estrutural, verde (nutrição/vitalidade) de apoio */
+    --accent:#123A52; --brand-green:#2FA84F; --brand-green-d:#37C05C; --brand-mint:#F2F9F4;
+    --t-a:#2a78d6; --t-b:#1baf7a; --t-e:#eb6834; --t-c:#8a8d84;
+    --shadow:0 1px 2px rgba(20,22,26,.05),0 6px 24px rgba(20,22,26,.06);
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--plane);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+
+  /* ---- Top bar ---- */
+  header{background:var(--surface);border-bottom:1px solid var(--hair);position:sticky;top:0;z-index:1000;box-shadow:0 1px 0 var(--hair)}
+  .bar{max-width:1240px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .brand{display:flex;flex-direction:row;align-items:center;gap:14px}
+  .brand .logo{width:48px;height:48px;flex:none;display:block}
+  .brand-txt{display:flex;flex-direction:column;gap:3px}
+  /* Nível 1 — marca em destaque (wordmark bicolor da identidade NutriMax) */
+  .brand-name{margin:0;font-size:19px;font-weight:800;letter-spacing:-.015em;line-height:1.05;color:var(--ink)}
+  .brand-name .nu{color:var(--accent)}
+  .brand-name .mx{color:var(--brand-green)}
+  .brand-name .dist{color:var(--ink-2);font-weight:600}
+  /* Nível 2 (subtítulo) + nível 3 (página, mais leve) na linha de contexto */
+  .brand-context{margin:0;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.01em}
+  .brand-context .st{color:var(--ink-2);font-weight:650}
+  nav{display:flex;gap:4px;margin-left:auto;background:var(--plane);padding:4px;border-radius:12px}
+  nav button{border:0;background:transparent;color:var(--ink-2);font:inherit;font-weight:650;font-size:13.5px;
+    padding:9px 16px;border-radius:9px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .15s,color .15s}
+  nav button .n{font-size:11px;font-weight:800;color:var(--muted)}
+  nav button:hover{color:var(--ink)}
+  nav button.active{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+  nav button.active .n{color:var(--accent)}
+  /* Foco visivel por teclado (acessibilidade) — sem afetar interacao por mouse */
+  nav button:focus-visible,select:focus-visible,input[type=range]:focus-visible{
+    outline:2px solid var(--accent);outline-offset:2px}
+
+  main{max-width:1240px;margin:0 auto;padding:24px}
+  .panel{display:none}
+  .panel.active{display:block;animation:fade .25s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  @media(prefers-reduced-motion:reduce){.panel.active{animation:none}}
+
+  .lead{color:var(--ink-2);font-size:14.5px;max-width:76ch;margin:0 0 20px}
+  .lead b{color:var(--ink)}
+
+  /* ---- Recomendação executiva (BLUF — topo da Visão Executiva) ---- */
+  .reco{position:relative;overflow:hidden;background:var(--accent);border-radius:var(--radius);
+    padding:17px 22px 18px;margin:0 0 20px;box-shadow:var(--shadow)}
+  .reco::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--brand-green-d)}
+  .reco-k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-green-d);font-weight:800;margin-bottom:5px}
+  .reco-t{margin:0;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,.9);font-weight:500;max-width:96ch}
+  .reco-t b{color:#fff;font-weight:750}
+
+  /* ---- KPIs ---- */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:22px}
+  .kpi{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:16px 18px;
+    box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);opacity:.9}
+  .kpi .l{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+  .kpi .v{font-size:clamp(23px,3vw,30px);font-weight:800;letter-spacing:-.02em;margin:7px 0 2px;line-height:1;
+    font-variant-numeric:tabular-nums}
+  .kpi .v small{font-size:.52em;font-weight:700;color:var(--ink-2)}
+  .kpi .f{font-size:12.5px;color:var(--ink-2)}
+  .kpi.tint-a::before{background:var(--t-a)} .kpi.tint-b::before{background:var(--t-b)}
+  .kpi.tint-e::before{background:var(--t-e)} .kpi.tint-c::before{background:var(--t-c)}
+
+  /* ---- Cards & grid ---- */
+  .grid{display:grid;gap:16px}
+  .g-2{grid-template-columns:1fr 1fr}
+  .g-32{grid-template-columns:1.35fr 1fr}
+  .card{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px}
+  .card h3{margin:0 0 2px;font-size:14.5px;font-weight:750}
+  .card .sub{margin:0 0 14px;font-size:12.5px;color:var(--muted)}
+  .plot{width:100%;height:300px}
+  .plot.tall{height:340px}
+
+  /* ---- Map ---- */
+  #map{height:520px;border-radius:12px;border:1px solid var(--hair);z-index:1}
+  .leaflet-popup-content{font-family:inherit;font-size:13px;margin:12px 14px}
+  .leaflet-popup-content b{font-size:13.5px}
+  .vm-badge{background:var(--accent);color:#fff;border-radius:8px;padding:3px 8px;font-size:11px;font-weight:700;
+    white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.3);border:2px solid #fff}
+
+  /* ---- Controls ---- */
+  .controls{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-end;margin-bottom:16px;
+    background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow)}
+  .ctl{display:flex;flex-direction:column;gap:7px}
+  .ctl .cl{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
+  .chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--hair);background:var(--plane);
+    padding:6px 12px;border-radius:999px;cursor:pointer;font-size:12.5px;font-weight:600;user-select:none;transition:.12s}
+  .chip .dot{width:10px;height:10px;border-radius:50%}
+  .chip.off{opacity:.4;filter:grayscale(.6)}
+  .chip:hover{border-color:var(--ink-2)}
+  select,input[type=range]{font:inherit}
+  select{padding:8px 12px;border:1px solid var(--hair);border-radius:9px;background:var(--surface);color:var(--ink);font-size:13px}
+  input[type=range]{width:190px;accent-color:var(--accent)}
+  .rangeval{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent)}
+  .filternote{font-size:12.5px;color:var(--ink-2);margin-left:auto;align-self:center}
+  .filternote b{color:var(--ink);font-variant-numeric:tabular-nums}
+
+  /* ---- Table ---- */
+  .tbl-wrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;font-size:13px;min-width:560px}
+  th{text-align:right;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:700;
+    padding:0 12px 8px;border-bottom:1px solid var(--hair);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left}
+  td{padding:9px 12px;text-align:right;font-variant-numeric:tabular-nums;border-bottom:1px solid var(--grid);color:var(--ink-2)}
+  td:first-child{color:var(--ink);font-weight:600}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr td{transition:background .12s}
+  tbody tr:hover td{background:rgba(18,58,82,.035)}
+  .pill{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+  .pill .dot{width:9px;height:9px;border-radius:50%}
+
+  .insight{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(100deg,rgba(18,58,82,.08),rgba(47,168,79,.10));
+    border:1px solid var(--hair);border-radius:var(--radius);padding:16px 20px;margin-bottom:22px}
+  .insight .big{font-size:clamp(26px,4vw,38px);font-weight:850;letter-spacing:-.02em;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums}
+  .insight p{margin:0;font-size:13.5px;color:var(--ink-2);max-width:60ch}
+  .insight p b{color:var(--ink)}
+
+  .costgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+  .costitem{background:var(--plane);border:1px solid var(--hair);border-radius:10px;padding:12px 14px}
+  .costitem .cv{font-size:18px;font-weight:800;font-variant-numeric:tabular-nums}
+  .costitem .cn{font-size:11.5px;color:var(--ink-2);margin-top:2px}
+
+  /* ---- Conclusão executiva ---- */
+  .conclusion{position:relative;overflow:hidden}
+  .conclusion::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;
+    background:linear-gradient(90deg,var(--accent),var(--brand-green))}
+  .recs{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:12px}
+  .recs li{display:flex;gap:12px;align-items:flex-start}
+  .recs .rn{flex:none;width:26px;height:26px;border-radius:8px;background:rgba(47,168,79,.14);color:var(--brand-green);
+    font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums}
+  .recs .rt{font-size:13.5px;color:var(--ink-2);line-height:1.5}
+  .recs .rt b{color:var(--ink);font-weight:700}
+
+  .note{font-size:12px;color:var(--muted);margin-top:8px}
+  .note code{background:var(--plane);border:1px solid var(--hair);border-radius:5px;padding:1px 5px;font-size:11.5px}
+
+  #loader{position:fixed;inset:0;background:var(--plane);display:flex;align-items:center;justify-content:center;z-index:5000;flex-direction:column;gap:14px}
+  .spin{width:34px;height:34px;border:3px solid var(--hair);border-top-color:var(--accent);border-radius:50%;animation:sp 1s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  #err{max-width:520px;text-align:center;color:var(--ink-2);font-size:14px;display:none}
+  #err code{background:var(--surface);border:1px solid var(--hair);border-radius:6px;padding:2px 7px;font-size:12.5px}
+
+  footer{max-width:1240px;margin:0 auto;padding:8px 24px 40px;color:var(--muted);font-size:12px}
+
+  @media(max-width:880px){.g-2,.g-32{grid-template-columns:1fr}.bar{padding:12px 16px}main{padding:16px}}
+</style>
+</head>
+<body>
+
+<div id="loader">
+  <div class="spin" id="spin"></div>
+  <div id="err">
+    <p><b>Não foi possível carregar a base.</b><br>
+    Este dashboard lê <code>output/clientes_tratados.csv</code> via <code>fetch</code>, que não funciona abrindo o arquivo direto (<code>file://</code>).</p>
+    <p>Sirva a pasta do projeto por HTTP e abra pelo servidor:</p>
+    <p style="text-align:left;background:var(--surface);border:1px solid var(--hair);border-radius:8px;padding:12px 14px;font-family:ui-monospace,Consolas,monospace;font-size:12.5px">
+      cd "Consultoria NutriMax"<br>python -m http.server 8000<br># abra: http://localhost:8000/dashboard/</p>
+  </div>
+</div>
+
+<header>
+  <div class="bar">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 160 160" role="img" aria-label="NutriMax Distribuidora">
+        <g transform="translate(80,80) scale(1.55)">
+          <path d="M40,0 L20,34.64 L-20,34.64 L-40,0 L-20,-34.64 L20,-34.64 Z" fill="#F2F9F4" stroke="#123A52" stroke-width="3.4"/>
+          <path d="M0,-26 C 16,-13 16,13 0,26 C -16,13 -16,-13 0,-26 Z" fill="#2FA84F"/>
+          <path d="M0,-20 L0,20 M0,-6 L11,-14 M0,-6 L-11,-14 M0,6 L10,-1 M0,6 L-10,-1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <circle cx="0" cy="-20" r="2.6" fill="#FFFFFF"/><circle cx="0" cy="20" r="2.6" fill="#FFFFFF"/>
+          <circle cx="11" cy="-14" r="2.4" fill="#FFFFFF"/><circle cx="-11" cy="-14" r="2.4" fill="#FFFFFF"/>
+          <circle cx="10" cy="-1" r="2.4" fill="#FFFFFF"/><circle cx="-10" cy="-1" r="2.4" fill="#FFFFFF"/>
+        </g>
+      </svg>
+      <div class="brand-txt">
+        <h1 class="brand-name"><span class="nu">Nutri</span><span class="mx">Max</span> <span class="dist">Distribuidora</span></h1>
+        <p class="brand-context"><span class="st">Carteirização Comercial</span> · Dashboard Executivo</p>
+      </div>
+    </div>
+    <nav id="nav">
+      <button data-tab="exec" class="active"><span class="n">01</span> Visão Executiva</button>
+      <button data-tab="prio"><span class="n">02</span> Priorização da Carteira</button>
+      <button data-tab="fin"><span class="n">03</span> Viabilidade Financeira</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ 1. VISÃO EXECUTIVA ============ -->
+  <section class="panel active" id="panel-exec">
+    <p class="lead">Carteira de <b id="ex-total">—</b> clientes em São Paulo. Referência logística: <b>Vila Mariana</b>;
+      distância medida em <b>linha reta</b> (Haversine) — aproximação de proximidade, não o trajeto real de carro.</p>
+
+    <div class="reco">
+      <div class="reco-k">Recomendação executiva</div>
+      <p class="reco-t" id="ex-reco-t">—</p>
+    </div>
+
+    <div class="kpis" id="ex-kpis"></div>
+
+    <div class="insight">
+      <div class="big" id="ex-conc-big">—</div>
+      <p id="ex-conc-txt">—</p>
+    </div>
+
+    <div class="grid g-2">
+      <div class="card">
+        <h3>Faturamento por grupo de prioridade</h3>
+        <p class="sub">R$ nos últimos 12 meses</p>
+        <div id="ex-fat" class="plot"></div>
+      </div>
+      <div class="card">
+        <h3>Clientes por grupo de prioridade</h3>
+        <p class="sub">participação na carteira</p>
+        <div id="ex-cli" class="plot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. PRIORIZAÇÃO ============ -->
+  <section class="panel" id="panel-prio">
+    <p class="lead">Mapa da carteira colorido por prioridade, com o raio de <b>25 km</b> a partir da Vila Mariana.
+      Filtre por grupo e zona para explorar onde está o valor.</p>
+
+    <div class="controls">
+      <div class="ctl">
+        <span class="cl">Grupos de prioridade</span>
+        <div class="chips" id="prio-chips"></div>
+      </div>
+      <div class="ctl">
+        <span class="cl">Zona</span>
+        <select id="prio-zona"><option value="__all">Todas as zonas</option></select>
+      </div>
+      <div class="filternote">Exibindo <b id="prio-count">—</b> clientes · faturamento <b id="prio-fat">—</b></div>
+    </div>
+
+    <div class="grid g-32">
+      <div class="card" style="padding:14px">
+        <div id="map"></div>
+      </div>
+      <div class="card">
+        <h3>Prioridade por zona</h3>
+        <p class="sub">nº de clientes (base completa)</p>
+        <div id="prio-stack" class="plot tall"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Maiores clientes no filtro atual</h3>
+      <p class="sub">top 12 por faturamento 12m</p>
+      <div class="tbl-wrap">
+        <table id="prio-table">
+          <thead><tr><th>Cliente</th><th>Zona</th><th>Prioridade</th><th>Distância</th><th>Pedidos 12m</th><th>Faturamento 12m</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. VIABILIDADE FINANCEIRA ============ -->
+  <section class="panel" id="panel-fin">
+    <p class="lead">Custo de cobrir a carteira com visitação de campo, a partir dos parâmetros reais de
+      <b>custosvisitacao</b>. Ajuste as premissas para simular cenários — <b>os custos vêm da base</b>, apenas a
+      frequência de visita e os grupos atendidos são premissas do gestor.</p>
+
+    <div class="controls">
+      <div class="ctl">
+        <span class="cl">Grupos atendidos com visita</span>
+        <div class="chips" id="fin-chips"></div>
+      </div>
+      <div class="ctl">
+        <span class="cl">Visitas por cliente / mês: <span class="rangeval" id="fin-freqv">1,0</span></span>
+        <input type="range" id="fin-freq" min="0.5" max="2" step="0.5" value="1">
+      </div>
+    </div>
+
+    <div class="kpis" id="fin-kpis"></div>
+
+    <div class="grid g-2">
+      <div class="card">
+        <h3>Composição do custo mensal</h3>
+        <p class="sub">representante fixo + deslocamento (km) + visitas pontuais fora do raio</p>
+        <div id="fin-comp" class="plot"></div>
+      </div>
+      <div class="card">
+        <h3>Retorno por grupo</h3>
+        <p class="sub">faturamento (12m) × custo estimado (12m)</p>
+        <div id="fin-ret" class="plot"></div>
+      </div>
+    </div>
+
+    <div class="grid g-2" style="margin-top:16px">
+      <div class="card">
+        <h3>Fora do raio — atender pontual ou abrir 2º ponto?</h3>
+        <p class="sub" id="fin-fora-sub">—</p>
+        <div id="fin-fora" class="costgrid"></div>
+        <p class="note" id="fin-fora-note">—</p>
+      </div>
+      <div class="card">
+        <h3>Parâmetros de custo (base)</h3>
+        <p class="sub">valores lidos de <code style="font-size:11.5px">output/custos_visitacao.csv</code></p>
+        <div class="tbl-wrap">
+          <table id="fin-params"><thead><tr><th>Item</th><th>Valor</th><th>Unidade</th></tr></thead><tbody></tbody></table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card conclusion" style="margin-top:16px">
+      <h3>Conclusão &amp; recomendação executiva</h3>
+      <p class="sub">síntese das três frentes: foco comercial, logística e retorno</p>
+      <ol class="recs" id="fin-conc"></ol>
+      <p class="note" style="margin-top:14px">Estudo de caso com dados fictícios · distância em linha reta (Haversine); os percentuais acompanham os grupos e a frequência definidos acima.</p>
+    </div>
+
+    <p class="note">Premissas explícitas: 1 rota fixa por representante dentro do raio; deslocamento = <code>2 × distância (linha reta) × R$/km</code>
+      — o trajeto real de carro tende a ser maior; clientes fora do raio atendidos por visita pontual. Custo anual = custo mensal × 12.</p>
+  </section>
+</main>
+
+<footer>Dados fictícios de estudo de caso · base tratada em <code>output/clientes_tratados.csv</code> · distância em linha reta (Haversine).</footer>
+
+<!-- Dados embutidos (preenchidos na versão publicável self-contained). Vazios = modo dev (usa fetch). -->
+<script id="data-clientes" type="text/csv"></script>
+<script id="data-custos" type="text/csv"></script>
+
+<script>
+/* ---------------- Config ---------------- */
+const VM = {lat:-23.5875, lon:-46.6396};
+const RAIO_KM = 25;
+const TIERS = {
+  "Prioridade A":       {key:"A", label:"Prioridade A",        color:"#2a78d6"},
+  "Prioridade B":       {key:"B", label:"Prioridade B",        color:"#1baf7a"},
+  "Excecao estrategica":{key:"E", label:"Exceção estratégica", color:"#eb6834"},
+  "Prioridade C":       {key:"C", label:"Prioridade C",        color:"#8a8d84"},
+};
+const TIER_ORDER = ["Prioridade A","Prioridade B","Excecao estrategica","Prioridade C"];
+const PLOT_CFG = {displayModeBar:false, responsive:true};
+const PLOT_FONT = {family:'system-ui,"Segoe UI",Roboto,sans-serif', color:'#565a52', size:12};
+const baseLayout = () => ({
+  paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)', font:PLOT_FONT,
+  separators:',.', margin:{l:8,r:12,t:10,b:8}, showlegend:false, bargap:0.32,
+});
+
+/* ---------------- Helpers ---------------- */
+const brl = n => 'R$ ' + Math.round(n).toLocaleString('pt-BR');
+const brlShort = n => n>=1e6 ? 'R$ '+(n/1e6).toLocaleString('pt-BR',{maximumFractionDigits:2})+' mi'
+                    : n>=1e3 ? 'R$ '+(n/1e3).toLocaleString('pt-BR',{maximumFractionDigits:0})+' mil' : brl(n);
+const pct = x => (x*100).toLocaleString('pt-BR',{maximumFractionDigits:1})+'%';
+const num = n => n.toLocaleString('pt-BR');
+
+function parseCSV(text, sep){
+  text = text.replace(/^﻿/,'');
+  const rows=[]; let row=[], field='', q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){
+      if(c==='"'){ if(text[i+1]==='"'){field+='"';i++;} else q=false; }
+      else field+=c;
+    } else {
+      if(c==='"') q=true;
+      else if(c===sep){ row.push(field); field=''; }
+      else if(c==='\n'){ row.push(field); rows.push(row); row=[]; field=''; }
+      else if(c==='\r'){}
+      else field+=c;
+    }
+  }
+  if(field.length||row.length){ row.push(field); rows.push(row); }
+  // Descarta linhas em branco no topo (ex.: a quebra apos <script ...> na
+  // versao publicavel embutida) para nao usar uma linha vazia como cabecalho.
+  while(rows.length && rows[0].length<=1 && (rows[0][0]??'').trim()==='') rows.shift();
+  const head=rows.shift();
+  return rows.filter(r=>r.length>1).map(r=>{const o={};head.forEach((h,i)=>o[h.trim()]=(r[i]??'').trim());return o;});
+}
+
+/* ---------------- State ---------------- */
+let DATA=[], COST={}, ZONAS=[];
+let map=null, mapLayer=null, mapInit=false;
+const rendered={exec:false,prio:false,fin:false};
+const prioFilter={tiers:new Set(TIER_ORDER), zona:'__all'};
+const finFilter={tiers:new Set(["Prioridade A","Prioridade B"]), freq:1};
+
+/* ---------------- Load ----------------
+   Usa dados embutidos (<script type=text/csv>) quando presentes — versão
+   publicável funciona em qualquer host e até offline. Sem eles, cai no fetch
+   dos CSVs em output/ (modo dev com servidor local). */
+function loadText(id,url){
+  const tag=document.getElementById(id);
+  if(tag && tag.textContent.trim().length) return Promise.resolve(tag.textContent);
+  return fetch(url).then(r=>{if(!r.ok)throw 0;return r.text();});
+}
+Promise.all([
+  loadText('data-clientes','../output/clientes_tratados.csv'),
+  loadText('data-custos','../output/custos_visitacao.csv'),
+]).then(([cli,cost])=>{
+  DATA = parseCSV(cli,';').map(d=>({
+    id:d.id_cliente, nome:d.nome_fantasia, tipo:d.tipo_profissional, bairro:d.bairro, zona:d.zona,
+    lat:+d.latitude, lon:+d.longitude, canal:d.canal_venda,
+    pedidos:+d.qtd_pedidos_12m||0, fat:+d.faturamento_12m||0, visitado:d.ja_visitado,
+    dist:+d.distancia_km, dentro:d.dentro_raio_25km==='Sim', prio:d.prioridade_comercial,
+  })).filter(d=>isFinite(d.lat)&&isFinite(d.lon));
+  parseCSV(cost,';').forEach(r=>COST[r.item]=+r.valor);
+  ZONAS=[...new Set(DATA.map(d=>d.zona))].filter(Boolean).sort();
+  document.getElementById('loader').style.display='none';
+  boot();
+}).catch(()=>{
+  document.getElementById('spin').style.display='none';
+  document.getElementById('err').style.display='block';
+});
+
+/* ---------------- Boot / tabs ---------------- */
+function boot(){
+  buildChips();
+  document.getElementById('prio-zona').insertAdjacentHTML('beforeend',
+    ZONAS.map(z=>`<option value="${z}">${z}</option>`).join(''));
+  document.querySelectorAll('#nav button').forEach(b=>b.addEventListener('click',()=>activate(b.dataset.tab)));
+  document.getElementById('prio-zona').addEventListener('change',e=>{prioFilter.zona=e.target.value;updatePrio();});
+  const fr=document.getElementById('fin-freq');
+  fr.addEventListener('input',e=>{finFilter.freq=+e.target.value;
+    document.getElementById('fin-freqv').textContent=finFilter.freq.toLocaleString('pt-BR',{minimumFractionDigits:1});updateFin();});
+  activate('exec');
+}
+function activate(tab){
+  document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('panel-'+tab).classList.add('active');
+  if(tab==='exec'){ if(!rendered.exec){renderExec();rendered.exec=true;} }
+  if(tab==='prio'){ if(!rendered.prio){renderPrio();rendered.prio=true;} else if(map){map.invalidateSize();} }
+  if(tab==='fin'){ if(!rendered.fin){renderFin();rendered.fin=true;} }
+  // resize plotly in the newly shown panel
+  document.querySelectorAll('#panel-'+tab+' .plot').forEach(el=>{ if(el._fullLayout) Plotly.Plots.resize(el); });
+}
+
+/* ---------------- Aggregations ---------------- */
+function byTier(rows){
+  const m={}; TIER_ORDER.forEach(t=>m[t]={n:0,fat:0});
+  rows.forEach(d=>{ if(m[d.prio]){m[d.prio].n++; m[d.prio].fat+=d.fat;} });
+  return m;
+}
+const TOTAL_FAT = () => DATA.reduce((s,d)=>s+d.fat,0);
+
+/* Custo de cobertura de um conjunto de clientes a uma frequencia (mesmo
+   modelo de custeio da pag. 3) — usado na tese executiva da pag. 1. */
+function costFor(sel,f){
+  const dentro=sel.filter(d=>d.dentro), fora=sel.filter(d=>!d.dentro);
+  const reps=Math.max(1,Math.ceil(dentro.length*f/COST.capacidade_visitas_mes));
+  const custoFixo=reps*COST.salario_representante;
+  const custoKm=dentro.reduce((s,d)=>s+f*2*d.dist*COST.custo_km_rodado,0);
+  const custoFora=fora.length*f*COST.custo_visita_pontual_fora_raio;
+  const fatSel=sel.reduce((s,d)=>s+d.fat,0);
+  return {reps, custoTotal:custoFixo+custoKm+custoFora, fatSel};
+}
+
+/* ---------------- 1. Executiva ---------------- */
+function renderExec(){
+  const total=DATA.length, fatTot=TOTAL_FAT();
+  const dentro=DATA.filter(d=>d.dentro);
+  const fatDentro=dentro.reduce((s,d)=>s+d.fat,0);
+  const m=byTier(DATA);
+  document.getElementById('ex-total').textContent=total;
+
+  const kpis=[
+    {l:'Clientes',v:num(total),f:'carteira analisada',t:''},
+    {l:'Faturamento 12m',v:brlShort(fatTot),f:'soma da carteira',t:''},
+    {l:'Clientes no raio 25km',v:pct(dentro.length/total),f:dentro.length+' clientes',t:'a'},
+    {l:'Faturamento no raio',v:pct(fatDentro/fatTot),f:brlShort(fatDentro)+' cobertos',t:'b'},
+    {l:'Ticket médio',v:brl(fatTot/total),f:'faturamento / cliente',t:''},
+  ];
+  document.getElementById('ex-kpis').innerHTML=kpis.map(k=>
+    `<div class="kpi ${k.t?'tint-'+k.t:''}"><div class="l">${k.l}</div><div class="v">${k.v}</div><div class="f">${k.f}</div></div>`).join('');
+
+  // concentração A+B+E
+  const prin=DATA.filter(d=>d.prio!=='Prioridade C');
+  const fatIn=prin.reduce((s,d)=>s+d.fat,0);
+  document.getElementById('ex-conc-big').textContent=pct(prin.length/total).replace('%','')+'% → '+pct(fatIn/fatTot).replace('%','')+'%';
+  document.getElementById('ex-conc-txt').innerHTML=
+    `Os grupos <b>A, B e Exceção</b> reúnem <b>${prin.length} clientes (${pct(prin.length/total)} da carteira)</b> e respondem por
+     <b>${pct(fatIn/fatTot)} do faturamento</b>. O grupo C — ${pct((total-prin.length)/total)} dos clientes — pesa
+     ${pct((fatTot-fatIn)/fatTot)}: atendimento de baixo custo e reativação.`;
+
+  // Recomendação executiva (BLUF) — tese no topo, ancorada na base
+  const covFat=fatDentro/fatTot;
+  const c=costFor(prin,1);
+  const ratio=c.fatSel? c.custoTotal*12/c.fatSel : 0;
+  document.getElementById('ex-reco-t').innerHTML=
+    `<b>Priorizar a visitação nos grupos A, B e Exceção</b>: ${pct(prin.length/total)} da carteira concentram `+
+    `<b>${pct(fatIn/fatTot)} do faturamento</b>. Com o raio de 25 km cobrindo <b>${pct(covFat)} da receita</b>, `+
+    `a cobertura por rota fixa sai a <b>${pct(ratio)} do faturamento atendido</b> — operação viável. `+
+    `A cauda longa (Grupo C, ${pct((total-prin.length)/total)} dos clientes) fica em canais de baixo custo e reativação.`;
+
+  const cats=TIER_ORDER, cols=cats.map(t=>TIERS[t].color), labs=cats.map(t=>TIERS[t].label);
+  // faturamento bar
+  Plotly.newPlot('ex-fat',[{
+    type:'bar', x:labs, y:cats.map(t=>m[t].fat), marker:{color:cols},
+    text:cats.map(t=>brlShort(m[t].fat)), textposition:'outside', textfont:{size:12,color:'#16181c'},
+    hovertemplate:'%{x}<br>%{y:,.0f} R$<extra></extra>', cliponaxis:false,
+  }],Object.assign(baseLayout(),{
+    yaxis:{gridcolor:'#e6e7e1',zeroline:false,tickprefix:'R$ ',showgrid:true},
+    xaxis:{tickfont:{size:11}}, margin:{l:70,r:12,t:22,b:30},
+  }),PLOT_CFG);
+  // clientes donut
+  Plotly.newPlot('ex-cli',[{
+    type:'pie', labels:labs, values:cats.map(t=>m[t].n), hole:.62, sort:false, direction:'clockwise',
+    marker:{colors:cols,line:{color:'#fff',width:2}}, textinfo:'label+percent', textfont:{size:11.5},
+    hovertemplate:'%{label}<br>%{value} clientes (%{percent})<extra></extra>',
+  }],Object.assign(baseLayout(),{margin:{l:8,r:8,t:8,b:8}}),PLOT_CFG);
+}
+
+/* ---------------- 2. Priorização ---------------- */
+function buildChips(){
+  const mk=(container,filter,cb)=>{
+    document.getElementById(container).innerHTML=TIER_ORDER.map(t=>
+      `<span class="chip" data-t="${t}"><span class="dot" style="background:${TIERS[t].color}"></span>${TIERS[t].label}</span>`).join('');
+    document.querySelectorAll(`#${container} .chip`).forEach(ch=>{
+      const t=ch.dataset.t;
+      ch.classList.toggle('off',!filter.tiers.has(t));
+      ch.addEventListener('click',()=>{
+        if(filter.tiers.has(t)) filter.tiers.delete(t); else filter.tiers.add(t);
+        if(filter.tiers.size===0){filter.tiers.add(t);return;}
+        ch.classList.toggle('off',!filter.tiers.has(t)); cb();
+      });
+    });
+  };
+  mk('prio-chips',prioFilter,updatePrio);
+  mk('fin-chips',finFilter,updateFin);
+}
+function prioRows(){
+  return DATA.filter(d=>prioFilter.tiers.has(d.prio)&&(prioFilter.zona==='__all'||d.zona===prioFilter.zona));
+}
+function renderPrio(){
+  map=L.map('map',{scrollWheelZoom:true}).setView([VM.lat,VM.lon],11);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
+    attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19}).addTo(map);
+  L.circle([VM.lat,VM.lon],{radius:RAIO_KM*1000,color:'#123A52',weight:1.5,fillColor:'#123A52',fillOpacity:.05,dashArray:'6 5'}).addTo(map);
+  L.marker([VM.lat,VM.lon],{icon:L.divIcon({className:'',html:'<div class="vm-badge">★ Vila Mariana</div>',iconSize:[110,22],iconAnchor:[55,11]})}).addTo(map);
+  mapLayer=L.layerGroup().addTo(map);
+
+  // stacked prioridade x zona (base completa)
+  const traces=TIER_ORDER.map(t=>({
+    type:'bar', orientation:'h', name:TIERS[t].label, y:ZONAS,
+    x:ZONAS.map(z=>DATA.filter(d=>d.zona===z&&d.prio===t).length),
+    marker:{color:TIERS[t].color}, hovertemplate:'%{y}<br>'+TIERS[t].label+': %{x}<extra></extra>',
+  }));
+  Plotly.newPlot('prio-stack',traces,Object.assign(baseLayout(),{
+    barmode:'stack', showlegend:false, margin:{l:150,r:12,t:6,b:24},
+    xaxis:{gridcolor:'#e6e7e1',zeroline:false}, yaxis:{tickfont:{size:11},autorange:'reversed'},
+  }),PLOT_CFG);
+
+  setTimeout(()=>map.invalidateSize(),60);
+  updatePrio();
+}
+function updatePrio(){
+  const rows=prioRows();
+  mapLayer.clearLayers();
+  rows.forEach(d=>{
+    L.circleMarker([d.lat,d.lon],{radius:5,color:'#fff',weight:1,fillColor:TIERS[d.prio].color,fillOpacity:.9})
+     .bindPopup(`<b>${d.nome}</b><br>${d.tipo} · ${d.bairro} (${d.zona})<br>
+       <span style="color:${TIERS[d.prio].color};font-weight:700">${TIERS[d.prio].label}</span><br>
+       Faturamento 12m: <b>${brl(d.fat)}</b><br>
+       ${d.dist.toLocaleString('pt-BR',{maximumFractionDigits:1})} km ${d.dentro?'(dentro)':'(fora)'} · ${d.pedidos} pedidos`)
+     .addTo(mapLayer);
+  });
+  const fat=rows.reduce((s,d)=>s+d.fat,0);
+  document.getElementById('prio-count').textContent=num(rows.length);
+  document.getElementById('prio-fat').textContent=brlShort(fat);
+  // table top 12
+  const top=[...rows].sort((a,b)=>b.fat-a.fat).slice(0,12);
+  document.querySelector('#prio-table tbody').innerHTML=top.map(d=>
+    `<tr><td>${d.nome}</td><td>${d.zona}</td>
+     <td><span class="pill"><span class="dot" style="background:${TIERS[d.prio].color}"></span>${TIERS[d.prio].key}</span></td>
+     <td>${d.dist.toLocaleString('pt-BR',{maximumFractionDigits:1})} km</td><td>${d.pedidos}</td><td>${brl(d.fat)}</td></tr>`).join('')
+     || '<tr><td colspan="6" style="text-align:center;color:var(--muted)">Nenhum cliente no filtro.</td></tr>';
+}
+
+/* ---------------- 3. Viabilidade ---------------- */
+function finGroups(){ return DATA.filter(d=>finFilter.tiers.has(d.prio)); }
+function computeFin(){
+  const f=finFilter.freq;
+  const sel=finGroups();
+  const dentro=sel.filter(d=>d.dentro), fora=sel.filter(d=>!d.dentro);
+  const visitasRota=dentro.length*f;
+  const reps=Math.max(1,Math.ceil(visitasRota/COST.capacidade_visitas_mes));
+  const custoFixo=reps*COST.salario_representante;
+  const custoKm=dentro.reduce((s,d)=>s+f*2*d.dist*COST.custo_km_rodado,0);
+  const custoFora=fora.length*f*COST.custo_visita_pontual_fora_raio;
+  const custoTotal=custoFixo+custoKm+custoFora;
+  const totalVisitas=visitasRota+fora.length*f;
+  const fatSel=sel.reduce((s,d)=>s+d.fat,0);
+  return {f,sel,dentro,fora,visitasRota,reps,custoFixo,custoKm,custoFora,custoTotal,totalVisitas,fatSel,
+          ocup: reps? visitasRota/(reps*COST.capacidade_visitas_mes):0};
+}
+function renderFin(){
+  document.querySelector('#fin-params tbody').innerHTML=
+    [['salario_representante','Salário do representante','R$/mês'],
+     ['custo_km_rodado','Custo por km rodado','R$/km'],
+     ['capacidade_visitas_mes','Capacidade de visitas por mês','visitas/mês'],
+     ['custo_visita_pontual_fora_raio','Custo de visita pontual fora do raio','R$/visita'],
+     ['custo_abertura_2o_ponto','Custo de abertura de 2º ponto','R$ (único)']]
+    .map(([k,rot,u])=>`<tr><td>${rot}</td><td>${COST[k].toLocaleString('pt-BR')}</td><td>${u}</td></tr>`).join('');
+  updateFin();
+}
+function updateFin(){
+  const r=computeFin();
+  const kpis=[
+    {l:'Representantes',v:num(r.reps),f:'ocupação '+pct(r.ocup),t:'a'},
+    {l:'Custo mensal',v:brlShort(r.custoTotal),f:num(Math.round(r.totalVisitas))+' visitas/mês',t:'e'},
+    {l:'Custo por visita',v:brl(r.custoTotal/Math.max(r.totalVisitas,1)),f:'média ponderada',t:''},
+    {l:'Custo anual ÷ faturamento',v:r.fatSel?pct(r.custoTotal*12/r.fatSel):'—',f:brlShort(r.fatSel)+' atendidos',t:'b'},
+  ];
+  document.getElementById('fin-kpis').innerHTML=kpis.map(k=>
+    `<div class="kpi tint-${k.t}"><div class="l">${k.l}</div><div class="v">${k.v}</div><div class="f">${k.f}</div></div>`).join('');
+
+  // composição de custo
+  const comp=[['Representante fixo',r.custoFixo,'#123A52'],['Deslocamento (km)',r.custoKm,'#2a78d6'],['Visitas pontuais (fora)',r.custoFora,'#eb6834']];
+  Plotly.react('fin-comp',[{
+    type:'bar', x:comp.map(c=>c[0]), y:comp.map(c=>c[1]), marker:{color:comp.map(c=>c[2])},
+    text:comp.map(c=>brlShort(c[1])), textposition:'outside', textfont:{color:'#16181c',size:12}, cliponaxis:false,
+    hovertemplate:'%{x}<br>%{y:,.0f} R$/mês<extra></extra>',
+  }],Object.assign(baseLayout(),{
+    yaxis:{gridcolor:'#e6e7e1',zeroline:false,tickprefix:'R$ '}, xaxis:{tickfont:{size:11}}, margin:{l:70,r:12,t:22,b:34},
+  }),PLOT_CFG);
+
+  // retorno por grupo (faturamento 12m vs custo 12m)
+  const groups=TIER_ORDER.filter(t=>finFilter.tiers.has(t));
+  const perG=groups.map(t=>{
+    const g=r.sel.filter(d=>d.prio===t), gd=g.filter(d=>d.dentro), gf=g.filter(d=>!d.dentro);
+    const routeG=gd.length*r.f;
+    const fixoG=r.visitasRota? r.custoFixo*(routeG/r.visitasRota):0;
+    const kmG=gd.reduce((s,d)=>s+r.f*2*d.dist*COST.custo_km_rodado,0);
+    const foraG=gf.length*r.f*COST.custo_visita_pontual_fora_raio;
+    return {t, fat:g.reduce((s,d)=>s+d.fat,0), custoAno:(fixoG+kmG+foraG)*12};
+  });
+  Plotly.react('fin-ret',[
+    {type:'bar',name:'Faturamento 12m',x:perG.map(g=>TIERS[g.t].label),y:perG.map(g=>g.fat),
+     marker:{color:'#1baf7a'},hovertemplate:'%{x}<br>Faturamento: %{y:,.0f} R$<extra></extra>'},
+    {type:'bar',name:'Custo estimado 12m',x:perG.map(g=>TIERS[g.t].label),y:perG.map(g=>g.custoAno),
+     marker:{color:'#c9ccc4'},hovertemplate:'%{x}<br>Custo: %{y:,.0f} R$<extra></extra>'},
+  ],Object.assign(baseLayout(),{
+    barmode:'group', showlegend:true, legend:{orientation:'h',y:1.16,x:0,font:{size:11}},
+    yaxis:{gridcolor:'#e6e7e1',zeroline:false,tickprefix:'R$ '}, xaxis:{tickfont:{size:11}}, margin:{l:70,r:12,t:30,b:30},
+  }),PLOT_CFG);
+
+  // fora do raio: pontual vs 2º ponto
+  const foraN=r.fora.length;
+  const pontualAno=foraN*r.f*COST.custo_visita_pontual_fora_raio*12;
+  const pontoAno=COST.salario_representante*12+COST.custo_abertura_2o_ponto;
+  document.getElementById('fin-fora-sub').textContent=`${foraN} cliente(s) fora do raio no cenário atual · ${r.f.toLocaleString('pt-BR',{minimumFractionDigits:1})} visita(s)/mês`;
+  document.getElementById('fin-fora').innerHTML=[
+    ['Visita pontual (ano)',brlShort(pontualAno),'#eb6834'],
+    ['2º ponto de apoio (ano 1)',brlShort(pontoAno),'#123A52'],
+    ['Diferença',brlShort(Math.abs(pontualAno-pontoAno)),'#565a52'],
+  ].map(c=>`<div class="costitem"><div class="cv" style="color:${c[2]}">${c[1]}</div><div class="cn">${c[0]}</div></div>`).join('');
+  document.getElementById('fin-fora-note').innerHTML= foraN===0
+    ? 'Nenhum cliente fora do raio nos grupos selecionados.'
+    : (pontualAno<pontoAno
+        ? `Com este volume, <b>visita pontual sai mais barata</b> que abrir um 2º ponto (salário anual + abertura de ${brl(COST.custo_abertura_2o_ponto)}).`
+        : `O volume já justifica avaliar um <b>2º ponto de apoio</b>: a visita pontual anual supera o custo de estruturá-lo.`);
+
+  // ---- Conclusão executiva: sintetiza as 3 frentes (base completa + cenário atual) ----
+  const totalC=DATA.length, fatTotC=TOTAL_FAT();
+  const PRIN=new Set(["Prioridade A","Prioridade B","Excecao estrategica"]);
+  const prin=DATA.filter(d=>PRIN.has(d.prio));
+  const concCli=totalC?prin.length/totalC:0, concFat=fatTotC?prin.reduce((s,d)=>s+d.fat,0)/fatTotC:0;
+  const covFat=fatTotC?DATA.filter(d=>d.dentro).reduce((s,d)=>s+d.fat,0)/fatTotC:0;
+  const ratioAno=r.fatSel?r.custoTotal*12/r.fatSel:0;
+  const recs=[
+    `<b>Concentre o esforço comercial nos grupos A, B e Exceção.</b> ${pct(concCli)} da carteira responde por <b>${pct(concFat)} do faturamento</b> — visitação onde o valor está.`,
+    `<b>Opere com rota fixa a partir da Vila Mariana.</b> O raio de 25 km já cobre <b>${pct(covFat)} da receita</b>; ${num(r.reps)} representante(s) atendem o cenário ${r.fora.length? 'com poucas visitas pontuais fora do raio' : 'sem exigir 2º ponto de apoio'}.`,
+    `<b>Retorno sustentável.</b> No cenário atual, o custo de campo equivale a <b>${pct(ratioAno)} do faturamento atendido</b> (${brlShort(r.custoTotal)}/mês) — operação financeiramente viável.`,
+    `<b>Trate a cauda longa (Grupo C) por canais de baixo custo.</b> ${pct(1-concCli)} dos clientes, de menor valor: manter via marketplace/indicação e reativação, sem visita presencial dedicada.`,
+  ];
+  document.getElementById('fin-conc').innerHTML=recs.map((t,i)=>
+    `<li><span class="rn">${i+1}</span><span class="rt">${t}</span></li>`).join('');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+CONSULTORIA NUTRIMAX — Logotipo NutriMax Distribuidora
+========================================================
+
+Conceito: hexágono (referência à química/estrutura molecular) com um
+uma folha estilizada, com as nervuras em ligações moleculares (nós), — reforça ciência, tecnologia, composição
+nutricional e credibilidade técnica.
+
+Cores da marca:
+  Verde .............. #2FA84F  (nutrição / vitalidade)
+  Azul-marinho ....... #123A52  (ciência / confiança)
+  Verde claro apoio .. #F2F9F4
+  Verde claro (escuro) #37C05C  (usado sobre fundo escuro)
+
+Fonte do wordmark: Liberation Sans / Arial, negrito.
+
+Arquivos:
+  nutrimax-horizontal.(svg/png) .... versão principal
+  nutrimax-empilhado.(svg/png) ..... redes sociais / espaços quadrados
+  nutrimax-icone.(svg/png) ......... selo / favicon / app
+  nutrimax-fundo-escuro.(svg/png) .. uso sobre fundos escuros
+
+SVG = vetor (amplia sem perder qualidade — ideal para impressão/fachada).
+PNG = imagem em alta resolução (uso geral, fundo transparente).

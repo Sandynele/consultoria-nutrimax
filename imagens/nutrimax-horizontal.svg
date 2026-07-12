@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="180" viewBox="0 0 560 180">
+  <g transform="translate(95,90)">
+    <path d="M40,0 L20,34.64 L-20,34.64 L-40,0 L-20,-34.64 L20,-34.64 Z" fill="#F2F9F4" stroke="#123A52" stroke-width="4"/>
+    <path d="M0,-26 C 16,-13 16,13 0,26 C -16,13 -16,-13 0,-26 Z" fill="#2FA84F"/>
+    <path d="M0,-20 L0,20 M0,-6 L11,-14 M0,-6 L-11,-14 M0,6 L10,-1 M0,6 L-10,-1" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <circle cx="0" cy="-20" r="2.8" fill="#FFFFFF"/><circle cx="0" cy="20" r="2.8" fill="#FFFFFF"/>
+    <circle cx="11" cy="-14" r="2.6" fill="#FFFFFF"/><circle cx="-11" cy="-14" r="2.6" fill="#FFFFFF"/>
+    <circle cx="10" cy="-1" r="2.6" fill="#FFFFFF"/><circle cx="-10" cy="-1" r="2.6" fill="#FFFFFF"/>
+  </g>
+  <text x="170" y="100" font-family="Liberation Sans, Arial, sans-serif" font-size="54" font-weight="bold" letter-spacing="-1"><tspan fill="#123A52">Nutri</tspan><tspan fill="#2FA84F">Max</tspan></text>
+  <text x="173" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="bold" letter-spacing="7.5" fill="#5A7280">DISTRIBUIDORA</text>
+</svg>
