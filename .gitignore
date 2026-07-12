@@ -6,9 +6,6 @@ __pycache__/
 venv/
 env/
 
-# Configuração local do Claude Code (específica da máquina)
-.claude/settings.local.json
-
 # Sistema operacional
 Thumbs.db
 Desktop.ini
@@ -16,7 +13,3 @@ Desktop.ini
 
 # Editores
 *.swp
-
-# Documentos internos de apresentacao (nao publicar no GitHub)
-*.docx
-~$*.docx
