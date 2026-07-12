@@ -87,6 +87,24 @@ Documento de leitura rápida com a **recomendação**, os **KPIs** e as resposta
 
 ---
 
+## 💡 Insights adicionais (além das perguntas)
+
+Análises extras que **reforçam** ou **refinam** a recomendação:
+
+### Priorizar por valor, não por perfil
+Testei segmentar por **tipo de profissional** e por **canal de venda**: ambos são **uniformes** — nenhum tipo passa de ~21% do faturamento e nenhum canal de ~32%. Não há um segmento a "perseguir". **Por isso a carteirização é por valor e proximidade, não por perfil.** (Único destaque: *Academia / Personal Trainer* tem o maior ticket — R$ 26,6 mil — e a maior taxa de visita atual, 37%.)
+
+### O gargalo é capacidade, não distância
+No custo de campo, **82–85% é salário fixo** (capacidade de visitas) e apenas **15–18% é deslocamento**. Ou seja: **otimizar rota economiza pouco; a alavanca é dimensionar a equipe** — quantos representantes e com que cadência. Escalar o time pesa muito mais do que encurtar trajetos.
+
+### A maior oportunidade está intocada
+Os **96 clientes de Prioridade A** (34% da receita) são de alto valor, **dentro do raio e nunca visitados**. É o ponto de partida óbvio: **maior retorno pelo menor esforço**, sem relacionamento prévio a defender.
+
+### O dashboard responde ao vivo
+Além dos números fixos, o painel **simula cenários** — frequência de visita (0,5×–2×/mês), grupos atendidos e zona — recalculando custo, nº de representantes e ocupação na hora. Serve para responder perguntas da diretoria durante a própria reunião.
+
+---
+
 ## 🧹 Qualidade dos dados (a base tem imperfeições de propósito)
 
 Tratamento aplicado em [`analise/tratamento_dados.py`](analise/tratamento_dados.py), **preservando a base original**:
