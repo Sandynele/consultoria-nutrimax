@@ -119,7 +119,8 @@ Tratamento aplicado em [`analise/tratamento_dados.py`](analise/tratamento_dados.
 
 ## ⚠️ Ressalvas honestas
 
-- **Correlação ≠ causalidade** na relação visita × faturamento (viés de seleção — ver pergunta 4).
+- **Faturamento não é lucro.** Priorizei por **receita** porque a base não traz margem. Um cliente de alto faturamento e baixa margem pode valer menos que um menor e mais rentável — com dados de margem, a priorização ideal seria por **lucro**. Limitação assumida conscientemente.
+- **Correlação ≠ causalidade** na relação visita × faturamento (viés de seleção — ver a análise de visita × faturamento).
 - **Distância em linha reta** (Haversine): o trajeto real de carro tende a ser maior. Por isso o custo usa `2 × distância × R$/km`, para não subestimar.
 - **6 IDs duplicados** ainda a consolidar por regra de negócio antes de operacionalizar.
 
