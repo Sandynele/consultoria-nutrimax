@@ -16,7 +16,3 @@ Desktop.ini
 
 # Editores
 *.swp
-
-# Documentos internos de apresentacao (nao publicar no GitHub)
-*.docx
-~$*.docx
