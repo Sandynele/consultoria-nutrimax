@@ -22,7 +22,9 @@
       "Bash(base64 -w0 imagens/nutrimax-icone.svg)",
       "Read(//c/Users/SandyPC/Documents/Projetos/**)",
       "Bash(mv \"Consultor de dados\" \"Consultoria NutriMax\")",
-      "PowerShell(Set-Location \"C:\\\\Users\\\\SandyPC\\\\Documents\\\\Projetos\"; try { Rename-Item -LiteralPath \"Consultor de dados\" -NewName \"Consultoria NutriMax\" -ErrorAction Stop; \"OK renomeada\"; Get-ChildItem -Directory | Select-Object Name } catch { \"FALHOU: $\\($_.Exception.Message\\)\" })"
+      "PowerShell(Set-Location \"C:\\\\Users\\\\SandyPC\\\\Documents\\\\Projetos\"; try { Rename-Item -LiteralPath \"Consultor de dados\" -NewName \"Consultoria NutriMax\" -ErrorAction Stop; \"OK renomeada\"; Get-ChildItem -Directory | Select-Object Name } catch { \"FALHOU: $\\($_.Exception.Message\\)\" })",
+      "Bash(python analise/build_dashboard.py)",
+      "Bash(node -e ' *)"
     ]
   }
 }
